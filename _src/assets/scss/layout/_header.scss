@@ -1,0 +1,41 @@
+.header__index,
+.header__card-creator {
+    width: 100%;
+    display: flex;
+}
+
+.header__index {
+    background-color: $color-light-midtone;
+    height: 129px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo__index {
+    width: 250px;
+    height: 64px;
+}
+
+.header__card-creator {
+    background-color: $color-light;
+    height: 111px;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.logo__card-creator {
+    width: 201px;
+    height: 51px;
+}
+
+/*Tablet*/
+
+@media all and (min-width: 768px) {
+    .header__index {
+        height: 455px;
+    }
+    .logo__index {
+        width: 419px;
+        height: 107px;
+    }
+}
