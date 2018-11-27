@@ -1,7 +1,9 @@
 .container__cardview {
     background: linear-gradient(to top, rgba(252,254,255,1) 0%, rgba(191,205,208,1) 100%);
-    margin: auto;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
 }
 
 .buttom__reset {
@@ -12,6 +14,8 @@
     text-transform: uppercase;
     border: 1px solid $color-white-egg;
     border-radius: 15px;
+    background-color: transparent;
+    margin: 10px 0 20px 45px;
 }
 
 .preview__card {
@@ -73,6 +77,6 @@
 }
 
 .tag {
-    
+    background-color: $color-blue-sky;
 }
 
