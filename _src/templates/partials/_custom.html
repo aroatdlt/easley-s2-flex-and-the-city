@@ -1,39 +1,55 @@
 <section>
   <form action="" method="GET">
-    <fieldset>
-      <legend>Diseña</legend>
-      <h2>Colores</h2>
-      <label for="setcolors1"></label>
-      <input id="setcolors1" type="radio" name="setcolors1">
-      <label for="setcolors2"></label>
-      <input id="setcolors2" type="radio" name="setcolors2">
-      <label for="setcolors3"></label>
-      <input id="setcolors3" type="radio" name="setcolors3">
-      <h2>Fuentes</h2>
-      <label for="Ubuntu">Ubuntu</label>
-      <input id="Ubuntu" type="radio" value="Ubuntu" name="Ubuntu">
-      <label for="Comic Sans">Comic Sans</label>
-      <input id="Comic Sans" type="radio" value="Comic Sans" name="Comic Sans">
-      <label for="Montserrat">Montserrat</label>
-      <input id="Montserrat" type="radio" value="Montserrat" name="Montserrat">
+    <fieldset class="deco_fieldset">
+      <legend class="design_title">Diseña</legend>
+      <h2 class="design_subtitle">Colores</h2>
+      <ul class="set_container">
+        <li>
+          <label class="list_item" for="setcolors1"></label>
+          <input id="setcolors1" type="radio" name="setcolors1">
+        </li>
+        <li>
+          <label class="list_item" for="setcolors2"></label>
+          <input id="setcolors2" type="radio" name="setcolors2">
+        </li>
+        <li>
+          <label class="list_item" for="setcolors3"></label>
+          <input id="setcolors3" type="radio" name="setcolors3">
+        </li>
+      </ul>
+      <h2 class="design_subtitle">Fuentes</h2>
+      <ul class="set_container">
+        <li>
+          <label class="list_item" for="Ubuntu">Ubuntu</label>
+          <input id="Ubuntu" type="radio" name="Ubuntu">
+        </li>
+        <li>
+          <label class="list_item" for="ComicSans">Comic Sans</label>
+          <input id="ComicSans" type="radio" name="ComicSans">
+        </li>
+        <li>
+          <label class="list_item" for="Montserrat">Montserrat</label>
+          <input id="Montserrat" type="radio" value="Montserrat" name="Montserrat">
+        </li>
+      </ul>
     </fieldset>
   </form>
   <form action="" method="POST">
-    <fieldset>
-      <legend>Rellena</legend>
-      <label for="firstName">Nombre completo</label>
+    <fieldset class="deco_fieldset">
+      <legend class="design_title">Rellena</legend>
+      <label class="fill_subtitle" for="firstName">Nombre completo</label>
       <input id="firstName" placeholder="Ej: Sally Jill" type="text" name="firstName">
-      <label for="position">Puesto</label>
+      <label class="fill_subtitle" for="position">Puesto</label>
       <input id="position" placeholder="Ej: Front-end unicorn" type="text" name="position">
-      <label for="profileImage">Imagen de perfil</label>
-      <input type="submit" value="Añadir imagen">
-      <label for="mail">Email</label>
+      <label class="fill_subtitle" for="profileImage">Imagen de perfil</label>
+      <input type="button" value="Añadir imagen">
+      <label class="fill_subtitle" for="mail">Email</label>
       <input id="mail" placeholder="Ej: Sally-hill@gmail.com" type="email" name="mail">
-      <label for="phone">Teléfono</label>
+      <label class="fill_subtitle" for="phone">Teléfono</label>
       <input id="phone" placeholder="Ej: 555-55-55-55" type="number" name="phone">
-      <label for="linkedin">Linkedin</label>
+      <label class="fill_subtitle" for="linkedin">Linkedin</label>
       <input id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" type="text" name="linkedin">
-      <label for="github">Github</label>
+      <label class="fill_subtitle" for="github">Github</label>
       <input id="github" placeholder="Ej: @sally-hill" type="text" name="github">
       <h3>Habilidades (máximo 3)</h3>
       <label for="html">HTML</label>
@@ -45,8 +61,8 @@
     </fieldset>
   </form>
   <form action="" method="GET">
-    <fieldset>
-      <legend>Comparte</legend>
+    <fieldset class="deco_fieldset">
+      <legend class="design_title">Comparte</legend>
       <label for="createcard"></label>
       <input type="submit" value="Crear tarjeta">
     </fieldset>
