@@ -1,5 +1,5 @@
 .home__main {
-    background-color: $color-light-midtone;
+    background-color: $color-white-bone;
     font-family: $font-family-primary;
 }
 .home__tittle {
@@ -8,23 +8,30 @@
     text-align: center;
     margin-top: 0px;
     padding-top: 35px;
+    font-family: $font-family-secondary;
+    font-size: 19px;
+    color: $color-orange-chicken;
 }
 .home__subtittle {
     max-width: 265px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    font-weight: 400;
+    font-weight: 400;       
+    font-family: $font-family-primary;
+    color: $color-green-blue;
+    font-size: 13px;
         @media all and (min-witdh: 768px) {
             width: 331px;
         }
 }
 .home__buttonbox {
-    border: 1px solid black;
+    border: 2px solid rgba(225, 115, 52, 0.21);
     width: 268px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 14px;
+    border-radius: 4px;
         @media all and (min-witdh: 768px) {
             margin-top: 21px;
         }
@@ -33,22 +40,12 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding-right: 20px;
+    padding: 0px 20px;
 }
-.buttonbox__text {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 20px;
-    margin: 0 0 13px 0;
-}
+
 .home__link__begin {
     text-decoration: none;
-    border: 2px solid black;
+    border: 1px solid $color-grey-rino;
     display: block;
     height: 42px;
     width: 129px;
@@ -60,4 +57,23 @@
     border-radius: 25px;
     margin-top: 37px;
     margin-bottom: 30px;
+    background-color: $color-blue-sky;
+    color: $color-white-egg;
+    text-transform: uppercase;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-semibold;
+}
+.buttonbox__icons__design, .buttonbox__icons__fill, .buttonbox__icons__share {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color-grey-stone;
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    margin: 0px;
+}
+.far, .fas {
+    color: $color-orange-chicken;
+    font-size: 26px;
+    margin-top: 16px;
 }
