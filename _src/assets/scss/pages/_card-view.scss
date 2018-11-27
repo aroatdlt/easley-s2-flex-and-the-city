@@ -29,18 +29,24 @@
 .rectangle__decoration {
     width: 5px;
     height: 42px;
-    background-color: $color-green-hospital; 
+    background-color: $color-green-hospital;
+    margin-top: 20px; 
+    position: absolute;
+
 }
 
 .name {
     color: $color-green-blue;
     font-size: 18px;
     font-family: $font-family-tertiary;
+    font-weight: $font-weight-semibold; 
+    margin: 20px 0 0 20px;
 }
 
 .profession {
     color: $color-grey-stone;
     font-family: $font-family-tertiary;
+    margin: 5px 0 10px 20px;
 }
 
 .photo__user {
