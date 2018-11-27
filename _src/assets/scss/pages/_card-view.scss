@@ -58,6 +58,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    padding-left: 20px;
+    margin: 10px 0 10px 0;
 }
 
 .social__media-buttom {
@@ -67,22 +69,32 @@
     width: 32px;
     height: 32px;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 8px;
+    margin-right: 10px;
 }
 
 .rectangle__decoration-large {
     background-color: $color-blue-sky;
     width: 240px;
     height: 2px;
+    opacity: 0.2;
 }
 
 .skill__tags {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    padding: 0 0 0 15px;
 }
 
 .tag {
+    font-family: $font-family-primary;
+    color: $color-white-egg;
+    font-size: 13px;
     background-color: $color-blue-sky;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 5px 0 5px;
 }
 
