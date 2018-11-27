@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Awesome profile-cards</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,600"
+        rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -14,6 +16,10 @@
     </head>
     
     <body>
+        <header class="header__card-creator">
+            <img class="logo__card-creator" src="assets/images/logo-awesome-profile-cards.svg"
+            alt="Logo Awesome Profile Cards">
+        </header>
         <main>
             <section>
                 <button><i class="far fa-trash-alt"></i>Reset</button>
@@ -42,7 +48,80 @@
                     </ul>
                 </div>
             </section>
+            <section>
+                <form action="" method="GET">
+                    <fieldset>
+                        <legend>Diseña</legend>
+                         <h2>Colores</h2>
+
+                        <label for="setcolors1"></label>
+                        <input id="setcolors1" type="radio" name="setcolors1">
+                        <label for="setcolors2"></label>
+                        <input id="setcolors2" type="radio" name="setcolors2">
+                        <label for="setcolors3"></label>
+                        <input id="setcolors3" type="radio" name="setcolors3">
+                         <h2>Fuentes</h2>
+
+                        <label for="Ubuntu">Ubuntu</label>
+                        <input id="Ubuntu" type="radio" value="Ubuntu" name="Ubuntu">
+                        <label for="Comic Sans">Comic Sans</label>
+                        <input id="Comic Sans" type="radio" value="Comic Sans"
+                        name="Comic Sans">
+                        <label for="Montserrat">Montserrat</label>
+                        <input id="Montserrat" type="radio" value="Montserrat"
+                        name="Montserrat">
+                    </fieldset>
+                </form>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Rellena</legend>
+                        <label for="firstName">Nombre completo</label>
+                        <input id="firstName" placeholder="Ej: Sally Jill"
+                        type="text" name="firstName">
+                        <label for="position">Puesto</label>
+                        <input id="position" placeholder="Ej: Front-end unicorn"
+                        type="text" name="position">
+                        <label for="profileImage">Imagen de perfil</label>
+                        <input type="submit" value="Añadir imagen">
+                        <label for="mail">Email</label>
+                        <input id="mail" placeholder="Ej: Sally-hill@gmail.com" type="email"
+                        name="mail">
+                        <label for="phone">Teléfono</label>
+                        <input id="phone" placeholder="Ej: 555-55-55-55" type="number"
+                        name="phone">
+                        <label for="linkedin">Linkedin</label>
+                        <input id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
+                        type="text" name="linkedin">
+                        <label for="github">Github</label>
+                        <input id="github" placeholder="Ej: @sally-hill" type="text"
+                        name="github">
+                         <h3>Habilidades (máximo 3)</h3>
+
+                        <label for="html">HTML</label>
+                        <input id="html" type="checkbox" name="html">
+                        <label for="css">CSS</label>
+                        <input id="css" type="checkbox" name="css">
+                        <label for="React">React</label>
+                        <input id="React" type="checkbox" name="React">
+                    </fieldset>
+                </form>
+                <form action="" method="GET">
+                    <fieldset>
+                        <legend>Comparte</legend>
+                        <label for="createcard"></label>
+                        <input type="submit" value="Crear tarjeta">
+                    </fieldset>
+                </form>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footer-container"> <small class="copyright">Awesome profile-cards &copy2018</small>
+ <a href="https://adalab.es/"
+                class="logo__link">
+        <img src="assets/images/logo-adalab.png" alt="Logo de Adalab" class="logo__image"></a>
+
+            </div>
+        </footer>
     </body>
 
 </html>
