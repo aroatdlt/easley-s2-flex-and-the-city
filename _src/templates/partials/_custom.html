@@ -1,21 +1,27 @@
 <section>
   <form action="" method="GET">
     <fieldset>
-      <legend>Diseña</legend>
+      <legend class="designTitle">Diseña</legend>
       <h2>Colores</h2>
-      <label for="setcolors1"></label>
-      <input id="setcolors1" type="radio" name="setcolors1">
-      <label for="setcolors2"></label>
-      <input id="setcolors2" type="radio" name="setcolors2">
-      <label for="setcolors3"></label>
-      <input id="setcolors3" type="radio" name="setcolors3">
+      <div class="set_container set_position">
+        <label for="setcolors1"></label>
+        <input id="setcolors1" type="radio" name="setcolors1">
+        <label for="setcolors2"></label>
+        <input id="setcolors2" type="radio" name="setcolors2">
+        <label for="setcolors3"></label>
+        <input id="setcolors3" type="radio" name="setcolors3">
+      </div>
       <h2>Fuentes</h2>
-      <label for="Ubuntu">Ubuntu</label>
-      <input id="Ubuntu" type="radio" value="Ubuntu" name="Ubuntu">
-      <label for="Comic Sans">Comic Sans</label>
-      <input id="Comic Sans" type="radio" value="Comic Sans" name="Comic Sans">
-      <label for="Montserrat">Montserrat</label>
-      <input id="Montserrat" type="radio" value="Montserrat" name="Montserrat">
+      <div class="set_container set_position">
+        <div class="prueba">
+        <label for="Ubuntu">Ubuntu</label>
+        <input id="Ubuntu" type="radio" name="Ubuntu">
+        </div>
+        <label for="ComicSans">Comic Sans</label>
+        <input id="ComicSans" type="radio" name="ComicSans">
+        <label for="Montserrat">Montserrat</label>
+        <input id="Montserrat" type="radio" value="Montserrat" name="Montserrat">
+      </div>
     </fieldset>
   </form>
   <form action="" method="POST">
@@ -26,7 +32,7 @@
       <label for="position">Puesto</label>
       <input id="position" placeholder="Ej: Front-end unicorn" type="text" name="position">
       <label for="profileImage">Imagen de perfil</label>
-      <input type="submit" value="Añadir imagen">
+      <input type="button" value="Añadir imagen">
       <label for="mail">Email</label>
       <input id="mail" placeholder="Ej: Sally-hill@gmail.com" type="email" name="mail">
       <label for="phone">Teléfono</label>

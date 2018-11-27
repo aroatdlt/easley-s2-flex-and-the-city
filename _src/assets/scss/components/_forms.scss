@@ -1,0 +1,16 @@
+fieldset {
+    border: 0;
+}
+
+legend {
+    text-transform: uppercase; 
+}
+
+.set_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50px;
+} 
+
+
