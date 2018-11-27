@@ -1,19 +1,33 @@
+.home__main {
+    background-color: $color-light-midtone;
+    font-family: $font-family-primary;
+}
 .home__tittle {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 0px;
+    padding-top: 35px;
 }
 .home__subtittle {
     max-width: 265px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    font-weight: 400;
+        @media all and (min-witdh: 768px) {
+            width: 331px;
+        }
 }
 .home__buttonbox {
     border: 1px solid black;
     width: 268px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 14px;
+        @media all and (min-witdh: 768px) {
+            margin-top: 21px;
+        }
 }
 .buttonbox__icons {
     list-style: none;
