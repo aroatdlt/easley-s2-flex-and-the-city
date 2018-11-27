@@ -1,0 +1,82 @@
+.deco_fieldset {
+    border: 0;
+}
+
+.design_title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: $font-weight-semibold;
+    color: $color-grey-stone;
+}
+
+.design_subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.set_container {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+} 
+
+.list_item {
+    float: right;
+}
+
+.fill_subtitle {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 0 6px;
+    color: $color-green-blue;
+}
+
+.input_box {
+    width: 281px;
+    height: 30px;
+    border: 1px solid $color-green-hospital;
+    padding: 4px 0 6px 9px;
+
+    &::placeholder {
+        font-family: $font-family-primary;
+        font-size: 14px;
+        color: $color-grey-mouse;
+        line-height: 1.43;
+    }
+}
+
+.fill_subtitle--skills {
+    font-weight: $font-weight-regular;
+}
+
+.container_add-image {
+    display: flex;
+}
+
+.button_add-image {
+    width: 140px;
+    height: 30px;
+    padding: 4px 22px 6px;
+    border: none;
+    border-radius: 3px;
+    background-color: $color-orange-chicken;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    font-family: $font-family-primary;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $color-white-egg;
+}
+
+.container_image-preview {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-green-hospital;
+}
+
+.image_preview {
+    width: 100%;
+    height: 100%;
+}
