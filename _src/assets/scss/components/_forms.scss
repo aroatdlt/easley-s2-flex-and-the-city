@@ -12,6 +12,10 @@
     font-weight: $font-weight-semibold;
     color: $color-grey-stone;
     margin: 0 155px 0 10px;
+
+    @media all and (min-widht: 768px) {
+        margin-right: 204px;
+    }
 }
 
 .design_subtitle {
@@ -67,6 +71,10 @@
         font-size: 14px;
         color: $color-grey-mouse;
         line-height: 1.43;
+    }
+
+    @media all and (min-widht: 768px) {
+        width: 329px;
     }
 }
 
