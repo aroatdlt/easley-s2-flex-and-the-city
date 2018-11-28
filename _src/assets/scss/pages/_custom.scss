@@ -1,0 +1,65 @@
+
+.set_colors {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+} 
+
+.colors_direction {
+    display: flex; 
+    margin: 10px;  
+}
+
+.box_darkgreen {
+    width: 30px;
+    height: 25px;
+    background: $color-green-blue;   
+}
+
+.box_bluesky {
+    width: 30px;
+    height: 25px;
+    background: $color-blue-sky; 
+}
+
+.box_greenhospital {
+    width: 30px;
+    height: 25px;
+    background: $color-green-hospital; 
+}
+.box_redblood {
+    width: 30px;
+    height: 25px;
+    background: $color-red-blood;   
+}
+
+.box_redtomato {
+    width: 30px;
+    height: 25px;
+    background: $color-red-tomato; 
+}
+
+.box_orangetomato {
+    width: 30px;
+    height: 25px;
+    background: $color-orange-tomato; 
+}
+
+
+.box_greyblue {
+    width: 30px;
+    height: 25px;
+    background: $color-grey-blue;   
+}
+
+.box_greypale {
+    width: 30px;
+    height: 25px;
+    background: $color-grey-pale; 
+}
+
+.box_bluesummer {
+    width: 30px;
+    height: 25px;
+    background: $color-blue-summer; 
+}
