@@ -13,12 +13,14 @@
 .design_subtitle {
     text-transform: uppercase;
     font-family: $font-family-primary;
+    color: $color-grey-stone;
     font-weight: 400;
     font-size: 14px;
 }
 
 .list_item {
     float: right;
+    color: $color-grey-stone;
 }
 
 .fill_subtitle {
