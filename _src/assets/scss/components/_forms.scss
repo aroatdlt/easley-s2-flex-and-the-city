@@ -1,6 +1,8 @@
 .deco_fieldset {
     border: 0;
     width: 100%;
+    margin: 0;
+    padding: 10px;
 }
 
 .design_title {
@@ -10,16 +12,10 @@
 
 .design_subtitle {
     text-transform: uppercase;
+    font-family: $font-family-primary;
+    font-weight: 400;
     font-size: 14px;
 }
-
-.set_container {
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 100px;
-} 
 
 .list_item {
     float: right;
