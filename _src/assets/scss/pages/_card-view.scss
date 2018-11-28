@@ -32,9 +32,8 @@
     background-color: $color-white-egg; 
     font-family: $font-family-tertiary;
     width: 240px;
-    height: 367px;
+    min-height: 367px;
     margin: auto;
-    padding-bottom: 11px;
 }
 
 .rectangle__decoration {
@@ -50,7 +49,7 @@
     color: $color-green-blue;
     font-size: 18px;
     font-family: $font-family-tertiary;
-    font-weight: $font-weight-semibold; 
+    font-weight: $font-weight-bold; 
     margin: 20px 0 0 20px;
 }
 
@@ -80,7 +79,7 @@
     width: 32px;
     height: 32px;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 7px;
     margin-right: 10px;
 }
 
@@ -95,7 +94,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    padding: 0 0 0 15px;
+    padding: 10px 0 10px 15px;
+    margin: 0;
 }
 
 .tag {
