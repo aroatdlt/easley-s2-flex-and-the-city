@@ -4,10 +4,12 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr;
+    padding-bottom: 30px;
 }
 
-.container_buttom {
-    max-width: 240px;
+.container__buttom {
+    width: 240px;
+    margin: auto;
 }
 
 .buttom__reset {
@@ -19,7 +21,11 @@
     border: 1px solid $color-white-egg;
     border-radius: 15px;
     background-color: transparent;
-    margin: 10px 0 20px 45px;
+    margin: 10px 0 20px 0px;
+}
+
+.icon__trash {
+    margin-right: 5px;
 }
 
 .preview__card {
@@ -28,6 +34,7 @@
     width: 240px;
     height: 367px;
     margin: auto;
+    padding-bottom: 11px;
 }
 
 .rectangle__decoration {
