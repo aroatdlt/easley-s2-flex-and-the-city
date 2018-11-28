@@ -1,5 +1,5 @@
 .custom-section {
-    padding: 30px 20px;
+    padding: 20px 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,19 +9,31 @@
     border: none;
     border-bottom: 1px solid $color-grey-rabbit;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
-.design_title {
+.fieldset_title {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: $font-weight-semibold;
     color: $color-grey-stone;
-    margin: 0 155px 0 10px;
+    margin-left: 10px;
 
     @media all and (min-widht: 768px) {
         margin-right: 204px;
     }
+}
+
+.fieldset_title--design {
+    margin-right: 168px;
+}
+
+.fieldset_title--fill {
+    margin-right: 155px;
+}
+
+.fieldset_title--share {
+    margin-right: 137px;
 }
 
 .design_subtitle {
@@ -62,7 +74,7 @@
 }
 
 .input_box {
-    width: 281px;
+    width: 280px;
     height: 30px;
     border: 1px solid $color-green-hospital;
     padding: 4px 0 6px 9px;
@@ -116,7 +128,7 @@
 }
 
 .container_skills {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: 17px 38px;
     grid-gap: 13px 10px;
