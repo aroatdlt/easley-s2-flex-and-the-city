@@ -101,3 +101,22 @@
 .selector_position {
     margin-right: 10px;
 } 
+
+.button_deco {
+    display: flex;
+    justify-content: center;
+    width: 199px;
+    height: 50px;
+    background-color: $color-orange-chicken;
+    text-transform: uppercase;
+    color: $color-white-egg;
+    border: none;
+    padding: 13px;
+    border-radius: 10px; 
+    font-family: $font-family-primary;
+    font-weight: 600;
+    font-size: 18px;
+}
+.fa-address-card {
+    color: $color-white-egg;
+}
