@@ -8,11 +8,20 @@ const professionCard = document.querySelector('.profession');
 
 
 const fillCardName = () => {
-    userNameCard.innerHTML = userNameForm.value;
+    if(userNameForm.value === "") {
+        userNameCard.innerHTML = "Nombre Apellido";
+    }else {
+        userNameCard.innerHTML = userNameForm.value;
+    }
+    
 }
 
 const fillCardProfession = () => {
-    professionCard.innerHTML = professionForm.value;
+    if(professionForm.value === "") {
+        professionCard.innerHTML = "Front-end developer";
+    }else {
+        professionCard.innerHTML = professionForm.value;
+    }
 }
 
 userNameForm.addEventListener('keyup', fillCardName);
