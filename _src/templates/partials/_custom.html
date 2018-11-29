@@ -1,7 +1,19 @@
-<section>
+<section class="custom-section">
   <form action="" method="GET">
     <fieldset class="deco_fieldset">
-      <legend class="design_title">Diseña</legend>
+
+      <div class="container_fieldset-title">
+        <div class="container_fieldset-icon">
+          <i class="far fa-object-ungroup"></i>
+        </div>
+
+        <legend class="fieldset_title fieldset_title--design">Diseña</legend>
+
+        <div class="container_arrow-icon">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </div>
+
       <ul class="set_colors">
         <li>
           <h2 class="design_subtitle design_colors">Colores</h2>
@@ -38,7 +50,9 @@
         </li>
       </ul>
       <ul class="set_container">
-        <li> <h2 class="design_subtitle design_colors">Fuentes</h2></li>
+        <li>
+          <h2 class="design_subtitle design_colors">Fuentes</h2>
+        </li>
         <li class="fonts_position">
           <label class="list_item" for="Ubuntu">Ubuntu</label>
           <input class="selector_position" id="Ubuntu" type="radio" name="Ubuntu">
@@ -60,14 +74,15 @@
 
       <div class="container_fieldset-title">
         <div class="container_fieldset-icon">
-            <i class="far fa-keyboard"></i>
+          <i class="far fa-keyboard"></i>
         </div>
-        <legend class="design_title">Rellena</legend>
+
+        <legend class="fieldset_title fieldset_title--fill">Rellena</legend>
+
         <div class="container_arrow-icon">
-            <i class="fas fa-angle-up"></i>
+          <i class="fas fa-angle-up"></i>
         </div>
       </div>
-
 
       <label class="fill_subtitle" for="firstName">Nombre completo</label>
       <input class="input_box" id="firstName" placeholder="Ej: Sally Jill" type="text" name="firstName">
@@ -99,26 +114,26 @@
       <h3 class="fill_subtitle fill_subtitle--skills">Habilidades (máximo 3)</h3>
 
       <div class="container_skills">
-          <label class="checkbox__label checkbox__label--html" for="html">HTML</label>
-          <input class="checkbox__input checkbox__input--html" id="html" type="checkbox" name="html">
-    
-          <label class="checkbox__label checkbox__label--css" for="css">CSS</label>
-          <input class="checkbox__input checkbox__input--css" id="css" type="checkbox" name="css">
-    
-          <label class="checkbox__label checkbox__label--react" for="react">React</label>
-          <input class="checkbox__input checkbox__input--react" id="react" type="checkbox" name="react">
+        <label class="checkbox__label checkbox__label--html" for="html">HTML</label>
+        <input class="checkbox__input checkbox__input--html" id="html" type="checkbox" name="html">
 
-          <label class="checkbox__label checkbox__label--javascript" for="javascript">JavaScript</label>
-          <input class="checkbox__input checkbox__input--javascript" id="javascript" type="checkbox" name="javascript">
+        <label class="checkbox__label checkbox__label--css" for="css">CSS</label>
+        <input class="checkbox__input checkbox__input--css" id="css" type="checkbox" name="css">
 
-          <label class="checkbox__label checkbox__label--git" for="git">Git</label>
-          <input class="checkbox__input checkbox__input--git" id="git" type="checkbox" name="git">
+        <label class="checkbox__label checkbox__label--react" for="react">React</label>
+        <input class="checkbox__input checkbox__input--react" id="react" type="checkbox" name="react">
 
-          <label class="checkbox__label checkbox__label--gulp" for="gulp">Gulp</label>
-          <input class="checkbox__input checkbox__input--gulp" id="gulp" type="checkbox" name="gulp">
+        <label class="checkbox__label checkbox__label--javascript" for="javascript">JavaScript</label>
+        <input class="checkbox__input checkbox__input--javascript" id="javascript" type="checkbox" name="javascript">
 
-          <label class="checkbox__label checkbox__label--sass" for="sass">Sass</label>
-          <input class="checkbox__input checkbox__input--sass" id="sass" type="checkbox" name="sass">
+        <label class="checkbox__label checkbox__label--git" for="git">Git</label>
+        <input class="checkbox__input checkbox__input--git" id="git" type="checkbox" name="git">
+
+        <label class="checkbox__label checkbox__label--gulp" for="gulp">Gulp</label>
+        <input class="checkbox__input checkbox__input--gulp" id="gulp" type="checkbox" name="gulp">
+
+        <label class="checkbox__label checkbox__label--sass" for="sass">Sass</label>
+        <input class="checkbox__input checkbox__input--sass" id="sass" type="checkbox" name="sass">
       </div>
 
     </fieldset>
@@ -126,8 +141,26 @@
 
   <form action="" method="GET">
     <fieldset class="deco_fieldset">
+<<<<<<< HEAD
       <legend class="design_title">Comparte</legend>
       <button class="button_deco" type="submit"><i class="far fa-address-card"></i>Crear tarjeta</button>
+=======
+
+      <div class="container_fieldset-title">
+        <div class="container_fieldset-icon">
+          <i class="fas fa-share-alt"></i>
+        </div>
+
+        <legend class="fieldset_title fieldset_title--share">Comparte</legend>
+
+        <div class="container_arrow-icon">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </div>
+
+      <label for="createcard"></label>
+      <input type="submit" value="Crear tarjeta">
+>>>>>>> 36a8bba7ff0b4a3c201406a5a60a67166d1f75da
     </fieldset>
   </form>
 </section>

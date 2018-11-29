@@ -1,0 +1,162 @@
+.container__cardview {
+    background: linear-gradient(to top, rgba(221,233,237,1) 0%, rgba(191,205,208,1) 100%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    padding-bottom: 30px;
+}
+
+.container__buttom {
+    width: 240px;
+    margin: auto;
+}
+
+.buttom__reset {
+    width: 75px;
+    height: 30px;
+    color: $color-grey-stone;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid $color-white-egg;
+    border-radius: 15px;
+    background-color: transparent;
+    margin: 10px 0 20px 0px;
+}
+
+.icon__trash {
+    margin-right: 5px;
+}
+
+.preview__card {
+    background-color: $color-white-egg; 
+    font-family: $font-family-tertiary;
+    width: 240px;
+    min-height: 367px;
+    margin: auto;
+}
+
+.rectangle__decoration {
+    width: 5px;
+    height: 42px;
+    background-color: $color-green-hospital;
+    margin-top: 20px; 
+    position: absolute;
+
+}
+
+.name {
+    color: $color-green-blue;
+    font-size: 18px;
+    font-family: $font-family-tertiary;
+    font-weight: $font-weight-bold; 
+    margin: 20px 0 0 20px;
+}
+
+.add__color__dark-green{
+    color: $color-green-blue;
+}
+
+.add__color__medium-green{
+    color: $color-blue-sky;
+}
+
+.add__color__light-green{
+    color: $color-green-hospital;
+}
+
+.add__color__dark-red{
+    color: $color-red-blood;
+}
+
+.add__color__medium-red{
+    color: $color-red-tomato;
+}
+
+.add__color__light-red{
+    color: $color-orange-tomato;
+}
+
+.add__color__dark-blue{
+    color: $color-grey-blue;
+}
+
+.add__color__medium-blue{
+    color: $color-grey-pale;
+}
+
+.add__color__light-blue{
+    color: $color-blue-summer;
+}
+
+.add__font__ubuntu{
+    font-family: $font-family-primary;
+    font-weight: $font-weight-semibold;
+}
+
+.add__font__comicsans{
+    font-family: $font-family-tertiary;
+    font-weight: $font-weight-regular;
+}
+
+.add__font__monserrat{
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-regular;
+}
+
+.profession {
+    color: $color-grey-stone;
+    font-family: $font-family-tertiary;
+    margin: 5px 0 10px 20px;
+}
+
+.photo__user {
+    width: 240px;
+    height: 200px;
+}
+
+.social__media-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.social__media-buttom {
+    color: $color-green-blue; 
+    border: 2px solid $color-green-hospital;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 10px;
+}
+
+.rectangle__decoration-large {
+    background-color: $color-blue-sky;
+    width: 240px;
+    height: 2px;
+    opacity: 0.2;
+}
+
+.skill__tags {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 15px;
+    margin: 0;
+}
+
+.tag {
+    font-family: $font-family-primary;
+    color: $color-white-egg;
+    font-size: 13px;
+    background-color: $color-blue-sky;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
