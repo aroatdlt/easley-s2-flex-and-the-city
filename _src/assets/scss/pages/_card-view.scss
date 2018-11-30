@@ -1,3 +1,8 @@
+.card-creator__main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .container__cardview {
     background: linear-gradient(to top, rgba(221,233,237,1) 0%, rgba(191,205,208,1) 100%);
     width: 100%;
