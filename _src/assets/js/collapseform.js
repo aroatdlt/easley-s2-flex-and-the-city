@@ -1,5 +1,10 @@
 const collapseDesignElement = document.querySelector('.collapseform-design');
 
-const designhiddenElement = document.querySelector('.designhidden');
+const designhiddenElement = document.querySelector('.form_section_content');
 
-console.log(collapseDesignElement);
+function handleCollapseForm () {
+    designhiddenElement.classList.toggle('designhidden');
+} 
+
+
+collapseDesignElement.addEventListener('click', handleCollapseForm);
