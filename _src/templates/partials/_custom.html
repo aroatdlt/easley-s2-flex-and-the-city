@@ -2,7 +2,7 @@
   <form action="" method="GET">
     <fieldset class="deco_fieldset">
 
-      <div class="container_fieldset-title">
+      <div class="container_fieldset-title collapseform-design">
         <div class="container_fieldset-icon">
           <i class="far fa-object-ungroup"></i>
         </div>
@@ -13,59 +13,60 @@
           <i class="fas fa-angle-up"></i>
         </div>
       </div>
-
-      <ul class="set_colors">
-        <li>
-          <h2 class="design_subtitle design_colors">Colores</h2>
-        </li>
-        <li class="color_container">
-          <label class="list_item" for="setcolors_green">
-            <div class="colors_direction">
-              <div class="box_darkgreen"></div>
-              <div class="box_bluesky"></div>
-              <div class="box_greenhospital"></div>
-            </div>
-          </label>
-          <input id="setcolors_green" type="radio" name="setcolors_green">
-        </li>
-        <li class="color_container">
-          <label class="list_item" for="setcolors_red">
-            <div class="colors_direction">
-              <div class="box_redblood"></div>
-              <div class="box_redtomato"></div>
-              <div class="box_orangetomato"></div>
-            </div>
-          </label>
-          <input id="setcolors_red" type="radio" name="setcolors_red">
-        </li>
-        <li class="color_container">
-          <label class="list_item" for="setcolors_blue">
-            <div class="colors_direction">
-              <div class="box_greyblue"></div>
-              <div class="box_greypale"></div>
-              <div class="box_bluesummer"></div>
-            </div>
-          </label>
-          <input id="setcolors_blue" type="radio" name="setcolors_blue">
-        </li>
-      </ul>
-      <ul class="set_container">
-        <li>
-          <h2 class="design_subtitle design_colors">Fuentes</h2>
-        </li>
-        <li class="fonts_position">
-          <label class="list_item" for="Ubuntu">Ubuntu</label>
-          <input class="selector_position" id="Ubuntu" type="radio" name="Ubuntu">
-        </li>
-        <li class="fonts_position">
-          <label class="list_item" for="ComicSans">Comic Sans</label>
-          <input class="selector_position" id="ComicSans" type="radio" name="ComicSans">
-        </li>
-        <li class="fonts_position">
-          <label class="list_item" for="Montserrat">Montserrat</label>
-          <input class="selector_position" id="Montserrat" type="radio" value="Montserrat" name="Montserrat">
-        </li>
-      </ul>
+      <div class="designhidden">
+        <ul class="set_colors">
+          <li>
+            <h2 class="design_subtitle design_colors">Colores</h2>
+          </li>
+          <li class="color_container">
+            <label class="list_item" for="setcolors_green">
+              <div class="colors_direction">
+                <div class="box_darkgreen"></div>
+                <div class="box_bluesky"></div>
+                <div class="box_greenhospital"></div>
+              </div>
+            </label>
+            <input id="setcolors_green" type="radio" name="setcolors_green">
+          </li>
+          <li class="color_container">
+            <label class="list_item" for="setcolors_red">
+              <div class="colors_direction">
+                <div class="box_redblood"></div>
+                <div class="box_redtomato"></div>
+                <div class="box_orangetomato"></div>
+              </div>
+            </label>
+            <input id="setcolors_red" type="radio" name="setcolors_red">
+          </li>
+          <li class="color_container">
+            <label class="list_item" for="setcolors_blue">
+              <div class="colors_direction">
+                <div class="box_greyblue"></div>
+                <div class="box_greypale"></div>
+                <div class="box_bluesummer"></div>
+              </div>
+            </label>
+            <input id="setcolors_blue" type="radio" name="setcolors_blue">
+          </li>
+        </ul>
+        <ul class="set_container">
+          <li>
+            <h2 class="design_subtitle design_colors">Fuentes</h2>
+          </li>
+          <li class="fonts_position">
+            <label class="list_item" for="Ubuntu">Ubuntu</label>
+            <input class="selector_position" id="Ubuntu" type="radio" name="Ubuntu">
+          </li>
+          <li class="fonts_position">
+            <label class="list_item" for="ComicSans">Comic Sans</label>
+            <input class="selector_position" id="ComicSans" type="radio" name="ComicSans">
+          </li>
+          <li class="fonts_position">
+            <label class="list_item" for="Montserrat">Montserrat</label>
+            <input class="selector_position" id="Montserrat" type="radio" value="Montserrat" name="Montserrat">
+          </li>
+        </ul>
+      </div>
     </fieldset>
   </form>
 
@@ -146,4 +147,3 @@
     </fieldset>
   </form>
 </section>
-
