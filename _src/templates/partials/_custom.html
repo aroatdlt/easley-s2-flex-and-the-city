@@ -13,7 +13,7 @@
           <i class="fas fa-angle-up"></i>
         </div>
       </div>
-      <div class="form_section_content">
+      <div class="form_design_content">
         <ul class="set_colors">
           <li>
             <h2 class="design_subtitle design_colors">Colores</h2>
@@ -73,7 +73,7 @@
   <form action="" method="POST">
     <fieldset class="deco_fieldset">
 
-      <div class="container_fieldset-title">
+      <div class="container_fieldset-title collapseform-fill">
         <div class="container_fieldset-icon">
           <i class="far fa-keyboard"></i>
         </div>
@@ -85,65 +85,78 @@
         </div>
       </div>
 
-      <label class="fill_subtitle" for="firstName">Nombre completo</label>
-      <input class="input_box full__name" id="firstName" placeholder="Ej: Sally Jill" type="text" name="firstName">
+      <div class="form_fill_content hidden">
+        <label class="fill_subtitle" for="firstName">Nombre completo</label>
+        <input class="input_box full__name" id="firstName" placeholder="Ej: Sally Jill" type="text" name="firstName">
 
-      <label class="fill_subtitle" for="position">Puesto</label>
-      <input class="input_box profession__input" id="position" placeholder="Ej: Front-end unicorn" type="text" name="position">
+        <label class="fill_subtitle" for="position">Puesto</label>
+        <input class="input_box profession__input" id="position" placeholder="Ej: Front-end unicorn" type="text" name="position">
 
-      <label class="fill_subtitle" for="profileImage">Imagen de perfil</label>
+        <label class="fill_subtitle" for="profileImage">Imagen de perfil</label>
 
-      <div class="container_add-image">
-        <input class="button_add-image" type="button" value="Añadir imagen">
-        <div class="container_image-preview">
-          <img src="" alt="" class="image-preview">
+        <div class="container_add-image">
+          <input class="button_add-image" type="button" value="Añadir imagen">
+          <div class="container_image-preview">
+            <img src="" alt="" class="image-preview">
+          </div>
+        </div>
+
+        <label class="fill_subtitle" for="mail">Email</label>
+        <input class="input_box" id="mail" placeholder="Ej: Sally-hill@gmail.com" type="email" name="mail">
+
+        <label class="fill_subtitle" for="phone">Teléfono</label>
+        <input class="input_box" id="phone" placeholder="Ej: 555-55-55-55" type="number" name="phone">
+
+        <label class="fill_subtitle" for="linkedin">Linkedin</label>
+        <input class="input_box" id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" type="text" name="linkedin">
+
+        <label class="fill_subtitle" for="github">Github</label>
+        <input class="input_box" id="github" placeholder="Ej: @sally-hill" type="text" name="github">
+
+        <h3 class="fill_subtitle fill_subtitle--skills">Habilidades (máximo 3)</h3>
+
+        <div class="container_skills">
+          <label class="checkbox__label checkbox__label--html" for="html">HTML</label>
+          <input class="checkbox__input checkbox__input--html" id="html" type="checkbox" name="html">
+
+          <label class="checkbox__label checkbox__label--css" for="css">CSS</label>
+          <input class="checkbox__input checkbox__input--css" id="css" type="checkbox" name="css">
+
+          <label class="checkbox__label checkbox__label--react" for="react">React</label>
+          <input class="checkbox__input checkbox__input--react" id="react" type="checkbox" name="react">
+
+          <label class="checkbox__label checkbox__label--javascript" for="javascript">JavaScript</label>
+          <input class="checkbox__input checkbox__input--javascript" id="javascript" type="checkbox" name="javascript">
+
+          <label class="checkbox__label checkbox__label--git" for="git">Git</label>
+          <input class="checkbox__input checkbox__input--git" id="git" type="checkbox" name="git">
+
+          <label class="checkbox__label checkbox__label--gulp" for="gulp">Gulp</label>
+          <input class="checkbox__input checkbox__input--gulp" id="gulp" type="checkbox" name="gulp">
+
+          <label class="checkbox__label checkbox__label--sass" for="sass">Sass</label>
+          <input class="checkbox__input checkbox__input--sass" id="sass" type="checkbox" name="sass">
         </div>
       </div>
-
-      <label class="fill_subtitle" for="mail">Email</label>
-      <input class="input_box" id="mail" placeholder="Ej: Sally-hill@gmail.com" type="email" name="mail">
-
-      <label class="fill_subtitle" for="phone">Teléfono</label>
-      <input class="input_box" id="phone" placeholder="Ej: 555-55-55-55" type="number" name="phone">
-
-      <label class="fill_subtitle" for="linkedin">Linkedin</label>
-      <input class="input_box" id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" type="text" name="linkedin">
-
-      <label class="fill_subtitle" for="github">Github</label>
-      <input class="input_box" id="github" placeholder="Ej: @sally-hill" type="text" name="github">
-
-      <h3 class="fill_subtitle fill_subtitle--skills">Habilidades (máximo 3)</h3>
-
-      <div class="container_skills">
-        <label class="checkbox__label checkbox__label--html" for="html">HTML</label>
-        <input class="checkbox__input checkbox__input--html" id="html" type="checkbox" name="html">
-
-        <label class="checkbox__label checkbox__label--css" for="css">CSS</label>
-        <input class="checkbox__input checkbox__input--css" id="css" type="checkbox" name="css">
-
-        <label class="checkbox__label checkbox__label--react" for="react">React</label>
-        <input class="checkbox__input checkbox__input--react" id="react" type="checkbox" name="react">
-
-        <label class="checkbox__label checkbox__label--javascript" for="javascript">JavaScript</label>
-        <input class="checkbox__input checkbox__input--javascript" id="javascript" type="checkbox" name="javascript">
-
-        <label class="checkbox__label checkbox__label--git" for="git">Git</label>
-        <input class="checkbox__input checkbox__input--git" id="git" type="checkbox" name="git">
-
-        <label class="checkbox__label checkbox__label--gulp" for="gulp">Gulp</label>
-        <input class="checkbox__input checkbox__input--gulp" id="gulp" type="checkbox" name="gulp">
-
-        <label class="checkbox__label checkbox__label--sass" for="sass">Sass</label>
-        <input class="checkbox__input checkbox__input--sass" id="sass" type="checkbox" name="sass">
-      </div>
-
     </fieldset>
   </form>
 
   <form action="" method="GET">
     <fieldset class="deco_fieldset">
-      <legend class="design_title">Comparte</legend>
-      <button class="button_deco" type="submit"><i class="far fa-address-card"></i>Crear tarjeta</button>
+      <div class="container_fieldset-title collapseform-share">
+        <div class="container_fieldset-icon">
+          <i class="fas fa-share-alt"></i>
+        </div>
+
+        <legend class="fieldset_title fieldset_title--design">Comparte</legend>
+
+        <div class="container_arrow-icon">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </div>
+      <div class="form_share_content hidden">
+        <button class="button_deco" type="submit"><i class="far fa-address-card"></i>Crear tarjeta</button>
+      </div>
     </fieldset>
   </form>
 </section>
