@@ -19,7 +19,12 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/previewnamejob.js",
+<<<<<<< HEAD
       "_src/assets/js/previewlinksinicons.js"
+=======
+      "_src/assets/js/collapseform.js"
+      
+>>>>>>> 4e8dede689a1853280a6a1ee9a1be86fdf3faa73
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
