@@ -11,5 +11,9 @@ const githubLink = document.querySelector('.icon__github');
 const fillMobileNumber = () => {
     if(mobileForm === ""){
         mobileLink.href = "";
+    }else {
+        mobileLink.href = `tel:`+ mobileForm;
     }
-}
+};
+
+mobileForm.addEventListener('keyup', fillMobileNumber);
