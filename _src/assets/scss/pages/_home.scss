@@ -1,36 +1,36 @@
 .home__main {
-    background-color: $color-white-bone;
     font-family: $font-family-primary;
-    padding-bottom: 30px;
+ 
 }
 .home__tittle {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 0px;
-    padding-top: 35px;
+    margin-bottom: 0px;
+    margin-top: 35px;
     font-family: $font-family-secondary;
     font-size: 19px;
     color: $color-orange-chicken;
         @media all and (min-width:768px) {
             font-size: 24px;
-            margin-bottom: 0px;
+            padding-top: 31px;
+            margin-top: 0px;
         }
 }
 .home__subtittle {
     width: 265px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-bottom: 14px;
     text-align: center;
     font-weight: 400;       
     font-family: $font-family-primary;
     color: $color-green-blue;
     font-size: 13px;
-    margin-bottom: 14px;
         @media all and (min-width:768px) {
             font-size: 16px;
             width: 331px;
-            margin-top: 4px;
+            padding-bottom: 21px;
     }
 }
 .home__buttonbox {
@@ -38,10 +38,8 @@
     width: 268px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 14px;
     border-radius: 4px;
         @media all and (min-width:768px) {
-            margin-top: 21px;
             width: 325px;
     }
 }
@@ -66,7 +64,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    margin-top: 37px;
+    margin-top: 39px;
     margin-bottom: 30px;
     background-color: $color-blue-sky;
     color: $color-white-egg;
@@ -74,9 +72,14 @@
     font-family: $font-family-primary;
     font-weight: $font-weight-semibold;
         @media all and (min-width:768px) {
-            margin-top: 196px;
-            margin-bottom: 60px;
+            margin-top: 24%;
+            margin-bottom: 59px;
     }
+    @media all and (min-width:1200px) {
+        margin-top: 39px;
+        margin-bottom: 30px;
+}  
+
 }
 .buttonbox__icons__design, .buttonbox__icons__fill, .buttonbox__icons__share {
     display: flex;
