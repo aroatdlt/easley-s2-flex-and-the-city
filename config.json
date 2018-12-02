@@ -19,7 +19,9 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/previewnamejob.js",
-      "_src/assets/js/collapseform.js"
+      "_src/assets/js/previewlinksinicons.js",
+      "_src/assets/js/collapseform.js",
+      "_src/assets/js/addImage.js"
       
 		],
 		"dest": "public/assets/js/",
