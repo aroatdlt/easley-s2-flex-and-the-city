@@ -11,3 +11,13 @@ body {
     font-size: $font-size-base;
     font-weight: $font-weight-regular;
 }
+
+.body__index {
+    height: 100vh;
+    min-height: 560px;
+    background-color: $color-white-bone;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
