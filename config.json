@@ -19,6 +19,7 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/previewnamejob.js",
+      "_src/assets/js/linksFill.js",
       "_src/assets/js/collapseform.js"
       
 		],
