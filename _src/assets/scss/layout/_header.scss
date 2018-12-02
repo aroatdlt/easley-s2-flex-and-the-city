@@ -15,6 +15,10 @@
     height: 64px;
 }
 
+.link__hidden {
+    pointer-events: none;
+}
+
 .header__card-creator {
     background-color: $color-white-egg;
     height: 111px;
