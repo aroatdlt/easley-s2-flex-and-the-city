@@ -3,10 +3,10 @@ const emailForm = document.querySelector('.phone__input');
 const linkedinForm = document.querySelector('.linkedin__input');
 const gitHubForm = document.querySelector('.github__input');
 
-const mobileLink = document.querySelector('.icon__number');
-const emailLink = document.querySelector('.icon__mail');
-const linkedinLink = document.querySelector('.icon__linkedin');
-const githubLink = document.querySelector('.icon__github');
+const mobileLink = document.querySelector('.icon__number').href;
+const emailLink = document.querySelector('.icon__mail').href;
+const linkedinLink = document.querySelector('.icon__linkedin').href;
+const githubLink = document.querySelector('.icon__github').href;
 
 const fillMobileNumber = () => {
     if(mobileForm === ""){
@@ -17,3 +17,13 @@ const fillMobileNumber = () => {
 };
 
 mobileForm.addEventListener('keyup', fillMobileNumber);
+
+const fillGithubLink = () => {
+    if(gitHubForm.value === "") {
+        githubLink = "";
+    }else {
+        githubLink = gitHubForm.value;
+    }
+};
+
+gitHubForm.addEventListener('keyup', fillGithubLink);
