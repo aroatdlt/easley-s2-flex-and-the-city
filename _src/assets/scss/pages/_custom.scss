@@ -25,8 +25,20 @@
     height: 150px;
 }
 
+.design_fonts {
+    height: 150px;
+    margin-top: 0;
+}
+
 .deco_fieldset {
     display: inline;
+}
+
+.type_fonts_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 17px;
 }
 
 .box_darkgreen {
@@ -88,14 +100,14 @@
     list-style: none;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
-    height: 150px;
+    align-content: space-between;
+    height: 90px;
     padding-left: 29px;
+    margin-bottom: 30px;
 } 
 
 .fonts_position {
-    padding: 10px;
-    margin-left: 23%;
+    padding: 5px 0;
 }
 
 .selector_position {
@@ -176,4 +188,4 @@
 .fa-twitter {
     height: 18px;
     width: 18px;
-}
+} 
