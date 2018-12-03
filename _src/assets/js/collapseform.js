@@ -13,15 +13,33 @@ const shareContentElement = document.querySelector('.form_share_content');
 
 function handleCollapseDesign() {
     designContentElement.classList.toggle('hidden');
+    if (!fillContentElement.classList.contains('hidden')) {
+        fillContentElement.classList.add('hidden');
+    } 
+    if (!shareContentElement.classList.contains('hidden')) {
+        shareContentElement.classList.add('hidden');
+    } 
 } 
 
 function handleCollapseFill() {
     fillContentElement.classList.toggle('hidden');
+    if (!designContentElement.classList.contains('hidden')) {
+        designContentElement.classList.add('hidden');
+    } 
+    if (!shareContentElement.classList.contains('hidden')) {
+        shareContentElement.classList.add('hidden');
+    } 
 } 
 
 
 function handleCollapseShare() {
     shareContentElement.classList.toggle('hidden');
+    if (!designContentElement.classList.contains('hidden')) {
+        designContentElement.classList.add('hidden');
+    } 
+    if (!fillContentElement.classList.contains('hidden')) {
+        fillContentElement.classList.add('hidden');
+    } 
 } 
 
 
