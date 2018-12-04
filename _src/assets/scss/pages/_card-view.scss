@@ -66,41 +66,7 @@
     margin: 20px 0 0 20px;
 }
 
-.add__color__dark-green{
-    color: $color-green-blue;
-}
 
-.add__color__medium-green{
-    color: $color-blue-sky;
-}
-
-.add__color__light-green{
-    color: $color-green-hospital;
-}
-
-.add__color__dark-red{
-    color: $color-red-blood;
-}
-
-.add__color__medium-red{
-    color: $color-red-tomato;
-}
-
-.add__color__light-red{
-    color: $color-orange-tomato;
-}
-
-.add__color__dark-blue{
-    color: $color-grey-blue;
-}
-
-.add__color__medium-blue{
-    color: $color-grey-pale;
-}
-
-.add__color__light-blue{
-    color: $color-blue-summer;
-}
 
 .add__font__ubuntu{
     font-family: $font-family-primary;
@@ -173,3 +139,38 @@
     padding: 0 5px 0 5px;
 }
 
+.add__color__dark-green{
+    color: $color-green-blue;
+}
+
+.add__color__medium-green{
+    color: $color-blue-sky;
+}
+
+.add__color__light-green{
+    color: $color-green-hospital;
+}
+
+.add__color__dark-red{
+    color: $color-red-blood;
+}
+
+.add__color__medium-red{
+    background-color: $color-red-tomato;
+}
+
+.add__color__light-red{
+    background-color: $color-orange-tomato;
+}
+
+.add__color__dark-blue{
+    color: $color-grey-blue;
+}
+
+.add__color__medium-blue{
+    background-color: $color-grey-pale;
+}
+
+.add__color__light-blue{
+    background-color: $color-blue-summer;
+}

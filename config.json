@@ -21,7 +21,8 @@
       "_src/assets/js/previewnamejob.js",
       "_src/assets/js/previewlinksinicons.js",
       "_src/assets/js/collapseform.js",
-      "_src/assets/js/addImage.js"
+      "_src/assets/js/addImage.js",
+      "_src/assets/js/addcolors.js"
       
 		],
 		"dest": "public/assets/js/",
