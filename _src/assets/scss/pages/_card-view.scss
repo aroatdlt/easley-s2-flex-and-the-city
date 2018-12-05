@@ -113,6 +113,10 @@
     margin-right: 10px;
 }
 
+.icon__item {
+color: $color-green-blue;
+}
+
 .rectangle__decoration-large {
     background-color: $color-blue-sky;
     width: 240px;
@@ -144,11 +148,15 @@
 }
 
 .add__color__medium-green{
-    color: $color-blue-sky;
+    background-color: $color-blue-sky;
 }
 
 .add__color__light-green{
-    color: $color-green-hospital;
+    background-color: $color-green-hospital;
+}
+
+.add__border__light-green{
+    border-color: $color-green-hospital;
 }
 
 .add__color__dark-red{
@@ -163,6 +171,10 @@
     background-color: $color-orange-tomato;
 }
 
+.add__border__light-red{
+    border-color: $color-orange-tomato;
+}
+
 .add__color__dark-blue{
     color: $color-grey-blue;
 }
@@ -173,4 +185,8 @@
 
 .add__color__light-blue{
     background-color: $color-blue-summer;
+}
+
+.add__border__light-blue{
+    border-color: $color-blue-summer;
 }
