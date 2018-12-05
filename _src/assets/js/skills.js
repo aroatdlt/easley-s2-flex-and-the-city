@@ -5,24 +5,34 @@ const skillsListElement = document.querySelector ('.skill__tags');
 
 function handleCheckBoxClick (event) {
     let listContent = "";
-    let item = "";
-    /*const checkBoxClick = event.currentTarget;*/
+    
     for(const skillsItem of skillsInputElements) {
         if (skillsItem.checked === true){
-           item = `<li class="tag">${skillsItem.value}</li>`;
-           listContent += item;
-        }
-    }  
+            listContent += `<li class="tag">${skillsItem.value}</li>`;
+        } 
+       
+    } 
+    limitCheckBox(); 
     skillsListElement.innerHTML = listContent;
+    
 }
-
 
 for(let i=0; i < skillsInputElements.length; i++) {
     skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
-
 }
 
-
+function limitCheckBox () {
+    let count = 0;
+    for(let i=0; i < skillsInputElements.length; i++) {
+        if (skillsInputElements[i].checked){
+            count += 1;
+        }
+        if (count > 3 && skillsInputElements[i].checked === false) {
+            skillsInputElements[i].disabled = true;
+        }
+    }
+    
+}
 
 
 
