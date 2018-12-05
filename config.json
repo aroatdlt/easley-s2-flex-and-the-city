@@ -22,7 +22,8 @@
       "_src/assets/js/previewlinksinicons.js",
       "_src/assets/js/collapseform.js",
       "_src/assets/js/addImage.js",
-      "_src/assets/js/addcolors.js"
+      "_src/assets/js/addcolors.js",
+      "_src/assets/js/addtypography.js"
       
 		],
 		"dest": "public/assets/js/",
