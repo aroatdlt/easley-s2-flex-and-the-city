@@ -7,17 +7,32 @@ const professionTypo = document.querySelector('.profession');
 
 function addUbuntuTypo(event) {
     nameTypo.classList.add('add__font__ubuntu');
+    nameTypo.classList.remove('add__font__comicsans');
+    nameTypo.classList.remove('add__font__monserrat');
+
     professionTypo.classList.add('add__font__ubuntu');
+    professionTypo.classList.remove('add__font__comicsans');
+    professionTypo.classList.remove('add__font__monserrat');
 };
 
 function addComicSansTypo(event) {
     nameTypo.classList.add('add__font__comicsans');
+    nameTypo.classList.remove('add__font__ubuntu');
+    nameTypo.classList.remove('add__font__monserrat');
+    
     professionTypo.classList.add('add__font__comicsans');
+    professionTypo.classList.remove('add__font__ubuntu');
+    professionTypo.classList.remove('add__font__monserrat');
 };
 
 function addMonserratTypo(event) {
     nameTypo.classList.add('add__font__monserrat');
+    nameTypo.classList.remove('add__font__ubuntu');
+    nameTypo.classList.remove('add__font__comicsans');
+    
     professionTypo.classList.add('add__font__monserrat');
+    professionTypo.classList.remove('add__font__ubuntu');
+    professionTypo.classList.remove('add__font__comicsans');
 };
 
 ubuntuTypo.addEventListener('click', addUbuntuTypo);
