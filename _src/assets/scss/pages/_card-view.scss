@@ -156,9 +156,7 @@
     border-color: $color-orange-tomato;
 }
 
-.add__color__dark-blue {
-    color: $color-grey-blue;
-}
+
 
 .add__color__medium-blue {
     background-color: $color-grey-pale;
@@ -171,7 +169,12 @@
 .add__border__light-blue {
     border-color: $color-blue-summer;
 }
+.add__color__dark-blue {
+    color: $color-grey-blue;
+}
 
+// Types of font-family added 
+//
 .add__font__ubuntu {
     font-family: $font-family-primary;
     font-weight: $font-weight-semibold;
@@ -179,7 +182,7 @@
 
 .add__font__comicsans {
     font-family: $font-family-tertiary;
-    font-weight: $font-weight-regular;
+    
 }
 
 .add__font__monserrat {
