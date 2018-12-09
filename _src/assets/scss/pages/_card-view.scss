@@ -48,8 +48,16 @@
   background-color: $color-white-egg;
   font-family: $font-family-tertiary;
   width: 240px;
-  min-height: 367px;
+  height: 367px;
   margin: auto;
+}
+
+.name__container {
+  height: 75px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .rectangle__decoration {
@@ -65,13 +73,13 @@
   font-size: 18px;
   font-family: $font-family-tertiary;
   font-weight: $font-weight-bold;
-  margin: 20px 0 0 20px;
+  margin: 0px 0px 5px 0px;
 }
 
 .profession {
   color: $color-grey-stone;
   font-family: $font-family-tertiary;
-  margin: 5px 0 10px 20px;
+  margin: 0px;
 }
 
 .photo__user {
@@ -113,7 +121,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  padding: 10px 0 10px 15px;
+  padding: 7px 0 10px 15px;
   margin: 0;
 }
 
