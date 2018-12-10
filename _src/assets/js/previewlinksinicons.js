@@ -35,12 +35,18 @@ function fillMail() {
 
 emailForm.addEventListener('keyup', handleMail);
 
+function handleMobile() {
+    fillMobileNumber();
+    userInfo.phone = mobileForm.value;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
 function fillMobileNumber() {
     const telText = mobileForm.value;
     mobileLink.href = `tel:` + telText;
 };
 
-mobileForm.addEventListener('keyup', fillMobileNumber);
+mobileForm.addEventListener('keyup', handleMobile);
 
 /* Enlace del link con la página de github
 */
