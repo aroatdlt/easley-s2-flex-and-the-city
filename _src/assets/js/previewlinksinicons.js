@@ -22,12 +22,18 @@ function fillLinkedin() {
 
 linkedinForm.addEventListener('keyup', handleLinkedin);
 
+function handleMail() {
+    fillMail();
+    userInfo.email = emailForm.value;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
 function fillMail() {
     const mailText = emailForm.value;
     emailLink.href = 'mailto:' + mailText;
 };
 
-emailForm.addEventListener('keyup', fillMail);
+emailForm.addEventListener('keyup', handleMail);
 
 function fillMobileNumber() {
     const telText = mobileForm.value;
