@@ -8,21 +8,28 @@ const emailLink = document.querySelector('.icon__mail');
 const linkedinLink = document.querySelector('.icon__linkedin');
 const githubLink = document.querySelector('.icon__github');
 
-function fillLinkedin(event) {
+function handleLinkedin() {
+    fillLinkedin();
+    userInfo.linkedin = linkedinLink.href;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+}
+
+function fillLinkedin() {
     const linkedinText = linkedinForm.value;
     linkedinLink.href = 'https://www.' + linkedinText;
 };
 
-linkedinForm.addEventListener('keyup', fillLinkedin);
+linkedinForm.addEventListener('keyup', handleLinkedin);
 
-function fillMail(event) {
+function fillMail() {
     const mailText = emailForm.value;
     emailLink.href = 'mailto:' + mailText;
 };
 
 emailForm.addEventListener('keyup', fillMail);
 
-function fillMobileNumber(event) {
+function fillMobileNumber() {
     const telText = mobileForm.value;
     mobileLink.href = `tel:` + telText;
 };
@@ -32,7 +39,7 @@ mobileForm.addEventListener('keyup', fillMobileNumber);
 /* Enlace del link con la página de github
 */
 
-function fillGithubLink(event) {
+function fillGithubLink() {
     const gitText = gitHubForm.value;
     githubLink.href = 'https://github.com/' + gitText;
 };
