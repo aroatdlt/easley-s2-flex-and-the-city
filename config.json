@@ -24,7 +24,9 @@
       "_src/assets/js/addImage.js",
       "_src/assets/js/addcolors.js",
       "_src/assets/js/addtypography.js",
+      "_src/assets/js/petitionofSkills.js",
       "_src/assets/js/skills.js"
+      
       
 		],
 		"dest": "public/assets/js/",
