@@ -22,15 +22,16 @@
         </header>
         <main class="card-creator__main">
             <section class="container__cardview">
-                <div class="container__buttom">
-                    <button class="buttom__reset" type="reset"><i class="icon__trash far fa-trash-alt icon__trash"></i>Reset</button>
+                <div class="container__buttom"> <a href="cardCreator.html"><button class="buttom__reset" type="button"><i class="icon__trash far fa-trash-alt icon__trash"></i>Reset</button></a>
+
                 </div>
                 <div class="preview__card">
                     <div class="rectangle__decoration"></div>
-                    <p class="name">Nombre Apellido</p>
-                    <p class="profession">Front-end developer</p>
-                    <img class="photo__user" src="assets/images/default.jpeg"
-                    alt="User photo">
+                    <div class="name__container">
+                        <p class="name">Nombre Apellido</p>
+                        <p class="profession">Front-end developer</p>
+                    </div>
+                    <img class="photo__user" src="assets/images/default.jpeg" alt="User photo">
                     <ul class="social__media-list">
                         <li class="social__media-buttom"> <a class="icon__number icon__item" href="">
         <i class="fas fa-mobile-alt">
@@ -62,7 +63,7 @@
                 </div>
             </section>
             <section class="custom-section">
-                <form action="" method="GET">
+                <form class="custom-form" action="" method="GET">
                     <fieldset class="deco_fieldset">
                         <div class="container_fieldset-title collapseform-design">
                             <div class="container_fieldset-icon"> <i class="far fa-object-ungroup"></i>
@@ -172,7 +173,7 @@
                             <input class="input_box linkedin__input" id="linkedin"
                             placeholder="Ej: linkedin.com/in/sally.hill" type="text" name="linkedin">
                             <label class="fill_subtitle" for="github">Github</label>
-                            <input class="input_box github__input" id="github" placeholder="Ej: @sally-hill"
+                            <input class="input_box github__input" id="github" placeholder="Ej: sally-hill"
                             type="text" name="github">
                              <h3 class="fill_subtitle fill_subtitle--skills">Habilidades (máximo 3)</h3>
 
