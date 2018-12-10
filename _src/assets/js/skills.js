@@ -1,4 +1,4 @@
-const skillsInputElements = document.querySelectorAll('.checkbox__input');
+let skillsInputElements = document.querySelectorAll('.checkbox__input');
 const skillsLabelElements = document.querySelectorAll('.checkbox__label');
 
 const skillsListElement = document.querySelector('.skill__tags');

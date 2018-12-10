@@ -8,7 +8,6 @@ function showSkills() {
         .then(response => response.json())
         .then(data => {
             const totalSkills = data.skills;
-            console.log(totalSkills);
             for (const skill of totalSkills) {
                 skillContainer.innerHTML += `<input class="checkbox__input checkbox__input--${skill}" id="${skill}" type="checkbox" name="skill_option" value="${skill}"><label class="checkbox__label checkbox__label--${skill}" for="${skill}">${skill}</label>`;
             }
