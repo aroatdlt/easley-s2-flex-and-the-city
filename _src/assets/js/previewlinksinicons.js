@@ -51,9 +51,26 @@ mobileForm.addEventListener('keyup', handleMobile);
 /* Enlace del link con la página de github
 */
 
+function handleGithub() {
+    fillGithubLink();
+    userInfo.github = gitHubForm.value;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
 function fillGithubLink() {
     const gitText = gitHubForm.value;
     githubLink.href = 'https://github.com/' + gitText;
 };
 
-gitHubForm.addEventListener('keyup', fillGithubLink);
+gitHubForm.addEventListener('keyup', handleGithub);
+
+/*
+opción que nos dió nashiba para hacer más simples las funciones
+
+function updateDataObject (key, value) {
+    data{key} = value
+}
+updateDataobject("name", inputname.value);
+
+*/
+
