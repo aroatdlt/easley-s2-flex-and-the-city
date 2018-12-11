@@ -13,10 +13,11 @@
 .container__cardview {
   background: linear-gradient(to top, rgba(221, 233, 237, 1) 0%, rgba(191, 205, 208, 1) 100%);
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 60px 1fr;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media all and (min-width: 768px) {
     border-radius: 6px;
@@ -25,7 +26,6 @@
 
 .container__buttom {
   width: 240px;
-  margin: auto;
 }
 
 .buttom__reset {
@@ -49,8 +49,8 @@
   font-family: $font-family-tertiary;
   width: 240px;
   height: 367px;
-  margin: auto;
 }
+
 .name__container {
   height: 75px;
   margin-left: 20px;
@@ -58,6 +58,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .rectangle__decoration {
   width: 5px;
   height: 42px;
@@ -183,8 +184,9 @@
 .add__border__light-blue {
   border-color: $color-blue-summer;
 }
+
 .add__color__dark-blue {
-    color: $color-grey-blue;
+  color: $color-grey-blue;
 }
 
 // Types of font-family added 
