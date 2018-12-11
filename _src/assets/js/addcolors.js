@@ -9,7 +9,32 @@ const circleColor = document.querySelectorAll('.social__media-buttom');
 const tagColors = document.querySelectorAll('.tag');
 
 /* Adding the original palette
+
+
+/*function handleLinkedin() {
+    fillLinkedin();
+    userInfo.linkedin = linkedinLink.href;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+}
 */
+function handleFirstPalete() {
+    addFirstPalete();
+    userInfo.linkedin = 1;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+function handleSecondPalete() {
+    addSecondPalete();
+    userInfo.linkedin = 2;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+function handleThirdPalete() {
+    addThirdPalete();
+    userInfo.linkedin = 3;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+
 function addFirstPalete (event) {
     nameColor.classList.add('add__color__dark-green');
     nameColor.classList.remove('add__color__dark-red');
@@ -89,6 +114,6 @@ function addThirdPalete (event) {
 
 /* Listeners from color card function 
 */
-secondPalete.addEventListener('click', addSecondPalete);
-thirdPalete.addEventListener('click', addThirdPalete);
-firstPalete.addEventListener('click', addFirstPalete);
+secondPalete.addEventListener('click', handleSecondPalete);
+thirdPalete.addEventListener('click', handleThirdPalete);
+firstPalete.addEventListener('click', handleFirstPalete);

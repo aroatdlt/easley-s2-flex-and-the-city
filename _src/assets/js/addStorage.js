@@ -7,7 +7,7 @@ let userInfo = {
     "email": "mariagar@example.com",
     "linkedin": "mariagar",
     "github": "mariagar",
-    "photo": "data:image/png;base64,2342ba...",
+    "photo": "",
     "skills": ["HTML", "Sass", "JavaScript"]
   }
 
