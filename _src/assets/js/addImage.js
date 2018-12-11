@@ -8,6 +8,17 @@ const fileField = document.querySelector('#img-selector');
 const profileImage = document.querySelector('.photo__user');
 const littleImage = document.querySelector('.image-preview');
 
+/*function handleLinkedin() {
+    fillLinkedin();
+    userInfo.linkedin = linkedinLink.href;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+}
+*/
+/* function handleImageInput() {
+  function getImage(e)
+}
+ */
 function getImage(e){
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
