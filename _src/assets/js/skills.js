@@ -1,4 +1,3 @@
-/*const formFillCollapsable = document.querySelector('.collapseform-fill');*/
 const skillContainer = document.querySelector('.container_skills');
 
 function showSkills() {
@@ -11,23 +10,7 @@ function showSkills() {
         skillContainer.innerHTML += `<input class="checkbox__input checkbox__input--${skill}" id="${skill}" type="checkbox" name="skill_option" value="${skill}"><label class="checkbox__label checkbox__label--${skill}" for="${skill}">${skill}</label>`;
       }
       const skillsInputElements = document.querySelectorAll('.checkbox__input');
-      console.log(skillsInputElements);
-      const skillsLabelElements = document.querySelectorAll('.checkbox__label');
-      console.log(skillsLabelElements);
       const skillsListElement = document.querySelector('.skill__tags');
-
-
-      /*function limitCheckBox() {
-        let count = 0;
-        for (let i = 0; i < skillsInputElements.length; i++) {
-          if (skillsInputElements[i].checked) {
-            count += 1;
-          }
-          if (count > 3 && skillsInputElements[i].checked === false) {
-            skillsInputElements[i].disabled = true;
-          }
-        }
-      }*/
 
       function limitCheckBox() {
         let count = 0;
