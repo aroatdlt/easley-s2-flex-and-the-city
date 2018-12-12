@@ -31,6 +31,7 @@ function handlerSendBackend (e) {
     event.preventDefault();
     sendRequest();
     twitterMotherElement.classList.remove('hidden');
+    buttonCreateCardElement.classList.add('button_created');
 }
 
 buttonCreateCardElement.addEventListener('click', handlerSendBackend);
