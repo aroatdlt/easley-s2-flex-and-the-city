@@ -53,7 +53,7 @@ function showSkills() {
           let listContentSkills = document.querySelectorAll('.tag');
           
           userInfo.skills = [listContentSkills[0].innerHTML, listContentSkills[1].innerHTML, listContentSkills[2].innerHTML];
-          /* console.log(listContentSkills[0].innerHTML);*/
+        
           localStorage.setItem('userInfo', JSON.stringify(userInfo));
         }
         skillsInLocalStorage();

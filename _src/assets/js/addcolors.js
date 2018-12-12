@@ -20,17 +20,17 @@ const tagColors = document.querySelectorAll('.tag');
 */
 function handleFirstPalete() {
     addFirstPalete();
-    userInfo.linkedin = 1;
+    userInfo.palette = 1;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 function handleSecondPalete() {
     addSecondPalete();
-    userInfo.linkedin = 2;
+    userInfo.palette = 2;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 function handleThirdPalete() {
     addThirdPalete();
-    userInfo.linkedin = 3;
+    userInfo.palette = 3;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
