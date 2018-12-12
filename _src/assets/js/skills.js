@@ -43,16 +43,35 @@ function showSkills() {
           }
         }
 
+
+
         limitCheckBox();
-
         skillsListElement.innerHTML = listContent;
-      }
 
+
+        function skillsInLocalStorage() {
+          let listContentSkills = document.querySelectorAll('.tag');
+          
+          userInfo.skills = [listContentSkills[0].innerHTML, listContentSkills[1].innerHTML, listContentSkills[2].innerHTML];
+          /* console.log(listContentSkills[0].innerHTML);*/
+          localStorage.setItem('userInfo', JSON.stringify(userInfo));
+        }
+        skillsInLocalStorage();
+
+      }
+      /* console.log(listContent); */
       for (let i = 0; i < skillsInputElements.length; i++) {
         skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
       }
 
     });
-
+  /* function skillsInLocalStorage() {
+    userInfo.skills = listContent;
+    console.log(listContent);
+    localStorage.setItem('userInfo', JSON.stringify(userInfo.skills));
+  } */
+  /* skillsInLocalStorage(); */
 };
+
+
 showSkills();

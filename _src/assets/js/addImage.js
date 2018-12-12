@@ -20,19 +20,17 @@ function getImage(e){
 function writeImage() {
   profileImage.src= fr.result;
   littleImage.src= fr.result;
+  userInfo.photo = fr.result;
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
 function fakeFileClick() {
  fileField.click(); 
 }
 
-function imageLocalStorage() {
-  userInfo.photo = myFile.src;
-  localStorage.setItem('userInfo', JSON.stringify);
-}
 
 fileField.addEventListener('change', getImage);
-fileField.addEventListener('load', imageLocalStorage);
+
 uploadBtn.addEventListener('click', fakeFileClick);
 
 
