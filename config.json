@@ -18,14 +18,15 @@
 	"js": {
 		"src": [
       "_src/assets/js/main.js",
+      "_src/assets/js/addStorage.js",
       "_src/assets/js/previewnamejob.js",
       "_src/assets/js/previewlinksinicons.js",
       "_src/assets/js/collapseform.js",
       "_src/assets/js/addImage.js",
       "_src/assets/js/addcolors.js",
       "_src/assets/js/addtypography.js",
-      "_src/assets/js/skills.js",
-      "_src/assets/js/addStorage.js"
+      "_src/assets/js/skills.js"
+      
       
       
 		],
