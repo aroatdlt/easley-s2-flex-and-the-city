@@ -5,6 +5,26 @@ const montserratTypo = document.querySelector('#Montserrat');
 const nameTypo = document.querySelector('.name');
 const professionTypo = document.querySelector('.profession');
 
+
+function selectUbuntu() {
+  addUbuntuTypo();
+  userInfo.typography = 1;
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+function selectComicSans() {
+  addComicSansTypo();
+  userInfo.typography = 2;
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+function selectMontserrat() {
+  addMonserratTypo();
+  userInfo.typography = 3;
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+
 function addUbuntuTypo(event) {
   nameTypo.classList.add('add__font__ubuntu');
   nameTypo.classList.remove('add__font__comicsans');
@@ -35,6 +55,6 @@ function addMonserratTypo(event) {
   professionTypo.classList.remove('add__font__comicsans');
 };
 
-ubuntuTypo.addEventListener('click', addUbuntuTypo);
-comicSansTypo.addEventListener('click', addComicSansTypo);
-montserratTypo.addEventListener('click', addMonserratTypo);
+ubuntuTypo.addEventListener('click', selectUbuntu);
+comicSansTypo.addEventListener('click', selectComicSans);
+montserratTypo.addEventListener('click', selectMontserrat);
