@@ -60,6 +60,7 @@
 .container_fieldset-title {
     margin: 10px 0 5px;
     display: flex;
+    cursor: pointer;
 }
 
 .container_fieldset-icon {
@@ -146,33 +147,6 @@
     width: 17px;
     height: 17px;
     margin: 0;
-}
-
-.checkbox__input--html {
-    grid-row: 1;
-}
-
-.checkbox__input--css {
-    grid-row: 2;
-}
-
-.checkbox__input--react {
-    grid-row: 3;
-}
-
-.checkbox__input--javascript {
-    grid-row: 4;
-}
-
-.checkbox__input--git {
-    grid-row: 5;
-}
-.checkbox__input--gulp {
-    grid-row: 6;
-}
-
-.checkbox__input--sass {
-    grid-row: 7;
 }
 
 .button_createcard {

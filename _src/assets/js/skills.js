@@ -1,61 +1,58 @@
-const skillsInputElements = document.querySelectorAll('.checkbox__input');
-const skillsLabelElements = document.querySelectorAll('.checkbox__label');
+const skillContainer = document.querySelector('.container_skills');
 
-const skillsListElement = document.querySelector('.skill__tags');
+function showSkills() {
 
-
-
-/*function limitCheckBox() {
-  let count = 0;
-  for (let i = 0; i < skillsInputElements.length; i++) {
-    if (skillsInputElements[i].checked) {
-      count += 1;
-    }
-    if (count > 3 && skillsInputElements[i].checked === false) {
-      skillsInputElements[i].disabled = true;
-    }
-  }
-}*/
-
-
-
-
-function limitCheckBox() {
-  let count = 0;
-  for (let i = 0; i < skillsInputElements.length; i++) {
-    if (skillsInputElements[i].checked) {
-      count += 1;
-    }
-  }
-  if (count >= 3) {
-    for (let i = 0; i < skillsInputElements.length; i++) {
-      if (!skillsInputElements[i].checked) {
-        skillsInputElements[i].disabled = true;
+  fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/skills.json')
+    .then(response => response.json())
+    .then(data => {
+      const totalSkills = data.skills;
+      for (const skill of totalSkills) {
+        skillContainer.innerHTML += `<input class="checkbox__input checkbox__input--${skill}" id="${skill}" type="checkbox" name="skill_option" value="${skill}"><label class="checkbox__label checkbox__label--${skill}" for="${skill}">${skill}</label>`;
       }
-    }
-  } else {
-    for (let i = 0; i < skillsInputElements.length; i++) {
-      if (!skillsInputElements[i].checked) {
-        skillsInputElements[i].disabled = false;
+      const skillsInputElements = document.querySelectorAll('.checkbox__input');
+      const skillsListElement = document.querySelector('.skill__tags');
+
+      function limitCheckBox() {
+        let count = 0;
+        for (let i = 0; i < skillsInputElements.length; i++) {
+          if (skillsInputElements[i].checked) {
+            count += 1;
+          }
+        }
+        if (count >= 3) {
+          for (let i = 0; i < skillsInputElements.length; i++) {
+            if (!skillsInputElements[i].checked) {
+              skillsInputElements[i].disabled = true;
+            }
+          }
+        } else {
+          for (let i = 0; i < skillsInputElements.length; i++) {
+            if (!skillsInputElements[i].checked) {
+              skillsInputElements[i].disabled = false;
+            }
+          }
+        }
       }
-    }
-  }
-}
 
-function handleCheckBoxClick(event) {
-  let listContent = "";
+      function handleCheckBoxClick(event) {
+        let listContent = "";
 
-  for (const skillsItem of skillsInputElements) {
-    if (skillsItem.checked === true) {
-      listContent += `<li class="tag">${skillsItem.value}</li>`;
-    }
-  }
+        for (const skillsItem of skillsInputElements) {
+          if (skillsItem.checked === true) {
+            listContent += `<li class="tag">${skillsItem.value}</li>`;
+          }
+        }
 
-  limitCheckBox();
+        limitCheckBox();
 
-  skillsListElement.innerHTML = listContent;
-}
+        skillsListElement.innerHTML = listContent;
+      }
 
-for (let i = 0; i < skillsInputElements.length; i++) {
-  skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
-}
+      for (let i = 0; i < skillsInputElements.length; i++) {
+        skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
+      }
+
+    });
+
+};
+showSkills();
