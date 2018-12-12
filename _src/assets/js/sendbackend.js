@@ -1,5 +1,5 @@
 const buttonCreateCardElement = document.querySelector('.button_deco');
-const twitterLinkElement = document.querySelector('twitter_link');
+const twitterLinkElement = document.querySelector('.twitter_link');
 function sendRequest(){
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
       method: 'POST',
