@@ -10,14 +10,14 @@ const githubLink = document.querySelector('.icon__github');
 
 function handleLinkedin() {
     fillLinkedin();
-    userInfo.linkedin = linkedinLink.href;
+    userInfo.linkedin = linkedinForm.value;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 
 }
 
 function fillLinkedin() {
     const linkedinText = linkedinForm.value;
-    linkedinLink.href = 'https://www.' + linkedinText;
+    linkedinLink.href = `https://www.linkedin.com/in/${linkedinText}`;
 };
 
 linkedinForm.addEventListener('keyup', handleLinkedin);
