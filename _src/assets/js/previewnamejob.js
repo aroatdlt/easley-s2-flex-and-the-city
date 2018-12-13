@@ -18,12 +18,13 @@ function handleCardProfession() {
 }
 
 const fillCardName = () => {
-    if(userNameForm.value === "") {
-        userNameCard.innerHTML = "Nombre Apellido";
-    }else {
+    if (userNameForm.value !== "") {
         userNameCard.innerHTML = userNameForm.value;
+    } else if (userInfo.name !== "") {
+        userNameCard.innerHTML = userInfo.name;
+    } else {
+        userNameCard.innerHTML = "Nombre Apellido";
     }
-    
 }
 
 const fillCardProfession = () => {

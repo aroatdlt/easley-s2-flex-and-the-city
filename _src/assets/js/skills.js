@@ -52,7 +52,10 @@ function showSkills() {
         function skillsInLocalStorage() {
           let listContentSkills = document.querySelectorAll('.tag');
           
-          userInfo.skills = [listContentSkills[0].innerHTML, listContentSkills[1].innerHTML, listContentSkills[2].innerHTML];
+          for (let i = 0; i < listContentSkills.length; i++) {
+            userInfo.skills += listContentSkills[i];
+          }
+          //userInfo.skills = [listContentSkills[0].innerHTML, listContentSkills[1].innerHTML, listContentSkills[2].innerHTML];
         
           localStorage.setItem('userInfo', JSON.stringify(userInfo));
         }
