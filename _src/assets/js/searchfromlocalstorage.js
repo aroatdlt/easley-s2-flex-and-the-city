@@ -24,8 +24,24 @@ function refillFormUserInfo(){
     if (savedUserInfo.github !== ""){
         gitHubForm.value = savedUserInfo.github;
         fillGithubLink();
-    } 
+    }
+
+    refillColorPalette ()
     
 }
 refillFormUserInfo();
 
+function refillColorPalette () {
+    if (savedUserInfo.palette === 1) {
+        addFirstPalete ();
+        firstPalete.setAttribute('checked', 'true');
+    }
+    if (savedUserInfo.palette === 2) {
+        addSecondPalete ();
+        secondPalete.setAttribute('checked', 'true');
+    }
+    if (savedUserInfo.palette === 3) {
+        addThirdPalete ();
+        thirdPalete.setAttribute('checked', 'true');
+    }
+}
