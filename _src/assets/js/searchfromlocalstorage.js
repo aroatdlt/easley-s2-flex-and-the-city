@@ -1,5 +1,35 @@
 const savedUserInfo = JSON.parse(localStorage.getItem('userInfo'));
 
+function refillColorPalette () {
+    if (savedUserInfo.palette === 1) {
+        handleFirstPalete();
+        firstPalete.setAttribute('checked', 'true');
+    }
+    if (savedUserInfo.palette === 2) {
+        handleSecondPalete();
+        secondPalete.setAttribute('checked', 'true');
+    }
+    if (savedUserInfo.palette === 3) {
+        handleThirdPalete();
+        thirdPalete.setAttribute('checked', 'true');
+    }
+}
+
+function refillTypography () {
+    if (savedUserInfo.typography === 1) {
+        selectUbuntu();
+        ubuntuTypo.setAttribute('checked', 'true');
+    }
+    if (savedUserInfo.typography === 2) {
+        selectComicSans();
+        comicSansTypo.setAttribute('checked', 'true');
+    }
+    if (savedUserInfo.typography === 3) {
+        selectMontserrat();
+        montserratTypo.setAttribute('checked', 'true');
+    }
+}
+
 function refillFormUserInfo(){
     if (savedUserInfo.name !== ""){
         userNameForm.value = savedUserInfo.name;
@@ -26,22 +56,8 @@ function refillFormUserInfo(){
         fillGithubLink();
     }
 
-    refillColorPalette ()
-    
+    refillColorPalette();
+    refillTypography();
 }
-refillFormUserInfo();
 
-function refillColorPalette () {
-    if (savedUserInfo.palette === 1) {
-        addFirstPalete ();
-        firstPalete.setAttribute('checked', 'true');
-    }
-    if (savedUserInfo.palette === 2) {
-        addSecondPalete ();
-        secondPalete.setAttribute('checked', 'true');
-    }
-    if (savedUserInfo.palette === 3) {
-        addThirdPalete ();
-        thirdPalete.setAttribute('checked', 'true');
-    }
-}
+refillFormUserInfo();
