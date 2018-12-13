@@ -27,8 +27,9 @@ function refillFormUserInfo(){
     } 
     if (savedUserInfo.photo !== "") {
         profileImage.src = savedUserInfo.photo;
+        littleImage.src = savedUserInfo.photo;
     }
-    
+       
 }
 refillFormUserInfo();
 
