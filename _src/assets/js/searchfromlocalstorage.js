@@ -25,6 +25,9 @@ function refillFormUserInfo(){
         gitHubForm.value = savedUserInfo.github;
         fillGithubLink();
     } 
+    if (savedUserInfo.photo !== "") {
+        profileImage.src = savedUserInfo.photo;
+    }
     
 }
 refillFormUserInfo();
