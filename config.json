@@ -26,8 +26,8 @@
       "_src/assets/js/addcolors.js",
       "_src/assets/js/addtypography.js",
       "_src/assets/js/skills.js",
-      "_src/assets/js/sendbackend.js"
-      
+      "_src/assets/js/sendbackend.js",
+      "_src/assets/js/reset.js"
       
 		],
 		"dest": "public/assets/js/",
