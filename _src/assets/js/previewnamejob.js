@@ -1,13 +1,22 @@
-
 const userNameForm = document.querySelector('.full__name');
 const professionForm = document.querySelector('.profession__input');
 
 const userNameCard = document.querySelector('.name');
 const professionCard = document.querySelector('.profession');
 
-function handleCardName() {
-    userInfo.name = userNameForm.value;
+function updateUserInfo(key, value) {
+    userInfo[key] = value;
+}
+
+function setLocalStorage() {
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+function handleCardName() {
+    //userInfo.name = userNameForm.value;
+    updateUserInfo('name', userNameForm.value);
+    //localStorage.setItem('userInfo', JSON.stringify(userInfo));
+    setLocalStorage();
     fillCardName();
 }
 
