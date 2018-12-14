@@ -36,6 +36,23 @@ function refillFormUserInfo(){
             addThirdPalete();
             thirdPalete.setAttribute('checked', 'true');
         }
+
+        /*Skills refill*/
+        const skillsInObject = userInfo.skills;
+        let listContentSkillsLS = "";
+        let skillsListElement = document.querySelector('.skill__tags');
+        for(let i = 0; i<skillsInObject.length; i++) {
+            listContentSkillsLS += `<li class="tag">${skillsInObject[i]}</li>`;
+        } 
+        skillsListElement.innerHTML = listContentSkillsLS;
+        const skillChildren = skillContainer.querySelectorAll('.checkbox__input');
+        /* console.log(skillChildren);
+        for(let i = 0; i<skillChildren.length; i++) {
+            //Si array de local storage contiene elemento actual
+        if(skillsInObject.includes(skillChildren[i].value)) {
+            skillChildren[i].setAttribute('checked', 'true');
+        }  
+}*/
      } 
     
     /*userInfo.name = savedUserInfo.name;

@@ -10,7 +10,7 @@ function showSkills() {
         skillContainer.innerHTML += `<input class="checkbox__input checkbox__input--${skill}" id="${skill}" type="checkbox" name="skill_option" value="${skill}"><label class="checkbox__label checkbox__label--${skill}" for="${skill}">${skill}</label>`;
       }
       const skillsInputElements = document.querySelectorAll('.checkbox__input');
-      const skillsListElement = document.querySelector('.skill__tags');
+      let skillsListElement = document.querySelector('.skill__tags');
 
       function limitCheckBox() {
         let count = 0;
@@ -51,12 +51,10 @@ function showSkills() {
 
         function skillsInLocalStorage() {
           let listContentSkills = document.querySelectorAll('.tag');
-          
+          userInfo.skills = [];
           for (let i = 0; i < listContentSkills.length; i++) {
-            userInfo.skills += listContentSkills[i];
+            userInfo.skills[i] = listContentSkills[i].innerHTML;
           }
-          //userInfo.skills = [listContentSkills[0].innerHTML, listContentSkills[1].innerHTML, listContentSkills[2].innerHTML];
-        
           localStorage.setItem('userInfo', JSON.stringify(userInfo));
         }
         skillsInLocalStorage();
