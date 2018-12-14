@@ -7,6 +7,8 @@ const fillForm = document.querySelector('.fill-form');
 const shareForm = document.querySelector('.share-form');
 
 function handleResetBtn () {
+    professionCard.innerHTML = "Front-end developer";
+    userNameCard.innerHTML = "Nombre Apellido";
     localStorage.removeItem('userInfo');
     designForm.reset();
     fillForm.reset();
