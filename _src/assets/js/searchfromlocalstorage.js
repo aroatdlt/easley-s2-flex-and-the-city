@@ -12,7 +12,19 @@ function refillFormUserInfo(){
 
         // 3. Se rellene la tarjeta con la información del OBJETO userInfo. Como nuestra función que rellena la tarjeta YA RECOGE LA INFORMACIÓN DEL OBJETO, no tenemos que cambiar nada, y podemos simplemente ejecutarla
         fillCardName();
-    } 
+
+        /*Typographi refill */
+        if(userInfo.typography === 1) {
+            addUbuntuTypo();
+            ubuntuTypo.setAttribute('checked', 'true');
+        } else if(userInfo.typography === 2) {
+            addComicSansTypo();
+            comicSansTypo.setAttribute('checked', 'true');
+        } else if(userInfo.typography === 3) {
+            addMonserratTypo();
+            montserratTypo.setAttribute('checked', 'true');
+        }
+     } 
     
     /*userInfo.name = savedUserInfo.name;
     userNameForm.value = userInfo.name;
