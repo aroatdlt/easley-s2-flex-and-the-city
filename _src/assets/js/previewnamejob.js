@@ -6,9 +6,10 @@ const userNameCard = document.querySelector('.name');
 const professionCard = document.querySelector('.profession');
 
 function handleCardName() {
-    fillCardName();
+    
     userInfo.name = userNameForm.value;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
+    fillCardName();
 }
 
 function handleCardProfession() {
@@ -18,13 +19,19 @@ function handleCardProfession() {
 }
 
 const fillCardName = () => {
-    if (userNameForm.value !== "") {
+    if (userInfo.name !== "") {
+        userNameCard.innerHTML = userInfo.name;
+    } else {
+        userNameCard.innerHTML = "Nombre Apellido";
+    }
+
+    /* if (userNameForm.value !== "") {
         userNameCard.innerHTML = userNameForm.value;
     } else if (userInfo.name !== "") {
         userNameCard.innerHTML = userInfo.name;
     } else {
         userNameCard.innerHTML = "Nombre Apellido";
-    }
+    } */
 }
 
 const fillCardProfession = () => {

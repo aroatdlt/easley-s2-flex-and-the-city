@@ -4,6 +4,7 @@ let savedUserInfo = JSON.parse(localStorage.getItem('userInfo'));
 function refillFormUserInfo(){
     if (savedUserInfo !== null){
         userInfo = savedUserInfo;
+        userNameForm.value = userInfo.name;
         fillCardName();
     } 
     
