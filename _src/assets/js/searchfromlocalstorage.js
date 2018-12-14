@@ -24,6 +24,18 @@ function refillFormUserInfo(){
             addMonserratTypo();
             montserratTypo.setAttribute('checked', 'true');
         }
+        
+        /*Color palettes refill */
+        if(userInfo.palette === 1) {
+            addFirstPalete();
+            firstPalete.setAttribute('checked', 'true');
+        } else if (userInfo.palette === 2) {
+            addSecondPalete();
+            secondPalete.setAttribute('checked', 'true');
+        } else if (userInfo.palette === 3) {
+            addThirdPalete();
+            thirdPalete.setAttribute('checked', 'true');
+        }
      } 
     
     /*userInfo.name = savedUserInfo.name;
