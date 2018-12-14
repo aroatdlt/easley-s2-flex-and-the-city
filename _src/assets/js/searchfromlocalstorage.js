@@ -9,9 +9,11 @@ function refillFormUserInfo(){
         
         // 2. Se rellene el formulario (cada campo, en este caso sería el campo del nombre pero habría que ejecutar esta función para cada campo) con la información correspondiente del OBJETO userInfo, que viene a su vez del localStorage (esta función la explico justo debajo, en la línea 70 de este archivo)
         refillFormField(userNameForm, 'name');
+        refillFormField(professionForm, 'job');
 
         // 3. Se rellene la tarjeta con la información del OBJETO userInfo. Como nuestra función que rellena la tarjeta YA RECOGE LA INFORMACIÓN DEL OBJETO, no tenemos que cambiar nada, y podemos simplemente ejecutarla
         fillCardName();
+        fillCardProfession();
     } 
     
     /*userInfo.name = savedUserInfo.name;

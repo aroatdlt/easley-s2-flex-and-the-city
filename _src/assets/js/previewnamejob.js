@@ -8,6 +8,7 @@ const professionCard = document.querySelector('.profession');
 function handleCardName() {
     // 1. Se actualice el objeto userInfo en el que guardamos toda la información que introduce la usuaria (explicación en línea 19 de este archivo)
     updateUserInfo('name', userNameForm.value);
+    
 
     // 2. La información que se ha guardado en el objeto se guarde también en el localStorage (explicación en línea 43 de este archivo)
     setLocalStorage();
@@ -80,16 +81,17 @@ function fillCardName() {
 }
 
 function handleCardProfession() {
+    updateUserInfo('job', professionForm.value);
+    setLocalStorage();
     fillCardProfession();
-    userInfo.job = professionForm.value;
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
-const fillCardProfession = () => {
-    if(professionForm.value === "") {
-        professionCard.innerHTML = "Front-end developer";
+function fillCardProfession() {
+    if(userInfo.job !== "") {
+        professionCard.innerHTML = userInfo.job;
+        console.log(userInfo.job);
     }else {
-        professionCard.innerHTML = professionForm.value;
+        professionCard.innerHTML = "Front-end developer";
     }
 }
 
