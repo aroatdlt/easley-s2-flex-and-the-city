@@ -9,68 +9,57 @@ const linkedinLink = document.querySelector('.icon__linkedin');
 const githubLink = document.querySelector('.icon__github');
 
 function handleLinkedin() {
+    updateUserInfo('linkedin', linkedinForm.value);
+    setLocalStorage();
     fillLinkedin();
-    userInfo.linkedin = linkedinForm.value;
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
-
 }
 
 function fillLinkedin() {
-    const linkedinText = linkedinForm.value;
-    linkedinLink.href = `https://www.linkedin.com/in/${linkedinText}`;
+ if(userInfo.linkedin !== ""){
+    linkedinLink.href = `https://www.linkedin.com/in/${userInfo.linkedin}`;
+ }
 };
 
 linkedinForm.addEventListener('keyup', handleLinkedin);
 
 function handleMail() {
+    updateUserInfo('email', emailForm.value);
+    setLocalStorage();
     fillMail();
-    userInfo.email = emailForm.value;
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
 function fillMail() {
-    const mailText = emailForm.value;
-    emailLink.href = 'mailto:' + mailText;
+    if(userInfo.email !== ""){
+        emailLink.href = `mailto:${userInfo.email}`;
+    }
 };
 
 emailForm.addEventListener('keyup', handleMail);
 
 function handleMobile() {
+    updateUserInfo('phone', mobileForm.value);
+    setLocalStorage();
     fillMobileNumber();
-    userInfo.phone = mobileForm.value;
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
 function fillMobileNumber() {
-    const telText = mobileForm.value;
-    mobileLink.href = `tel:` + telText;
+    if(userInfo.phone !== "") {
+        mobileLink.href = 'tel:' + userInfo.phone;
+    }
 };
 
 mobileForm.addEventListener('keyup', handleMobile);
 
-/* Enlace del link con la página de github
-*/
-
 function handleGithub() {
+    updateUserInfo('github', gitHubForm.value);
+    setLocalStorage();
     fillGithubLink();
-    userInfo.github = gitHubForm.value;
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
 function fillGithubLink() {
-    const gitText = gitHubForm.value;
-    githubLink.href = 'https://github.com/' + gitText;
+    if(userInfo.github !== ""){
+        githubLink.href = 'https://github.com/' + userInfo.github;
+    }
 };
 
 gitHubForm.addEventListener('keyup', handleGithub);
-
-/*
-opción que nos dió nashiba para hacer más simples las funciones
-
-function updateDataObject (key, value) {
-    data{key} = value
-}
-updateDataobject("name", inputname.value);
-
-*/
-

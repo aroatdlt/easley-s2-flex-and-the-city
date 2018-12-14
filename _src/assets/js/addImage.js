@@ -1,15 +1,10 @@
-// No hacer caso a la línea del FileReader, como en el mago de oz con el tipo de la cortina :)
 const fr = new FileReader();
 
-// Caso a partir de aquí :)
 const uploadBtn = document.querySelector('.button_add-image');
 
 const fileField = document.querySelector('#img-selector');
 const profileImage = document.querySelector('.photo__user');
 const littleImage = document.querySelector('.image-preview');
-
-
-
 
 function getImage(e){
   var myFile = e.currentTarget.files[0];
@@ -21,7 +16,7 @@ function writeImage() {
   profileImage.src= fr.result;
   littleImage.src= fr.result;
   userInfo.photo = fr.result;
-  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+  setLocalStorage();
 }
 
 function fakeFileClick() {
@@ -30,7 +25,6 @@ function fakeFileClick() {
 
 
 fileField.addEventListener('change', getImage);
-
 uploadBtn.addEventListener('click', fakeFileClick);
 
 
