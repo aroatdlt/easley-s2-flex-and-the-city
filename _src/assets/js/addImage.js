@@ -6,9 +6,6 @@ const fileField = document.querySelector('#img-selector');
 const profileImage = document.querySelector('.photo__user');
 const littleImage = document.querySelector('.image-preview');
 
-
-
-
 function getImage(e){
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
@@ -19,7 +16,7 @@ function writeImage() {
   profileImage.src= fr.result;
   littleImage.src= fr.result;
   userInfo.photo = fr.result;
-  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+  setLocalStorage();
 }
 
 function fakeFileClick() {
@@ -28,7 +25,6 @@ function fakeFileClick() {
 
 
 fileField.addEventListener('change', getImage);
-
 uploadBtn.addEventListener('click', fakeFileClick);
 
 
