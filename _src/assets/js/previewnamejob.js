@@ -1,36 +1,44 @@
-
 const userNameForm = document.querySelector('.full__name');
 const professionForm = document.querySelector('.profession__input');
 
 const userNameCard = document.querySelector('.name');
 const professionCard = document.querySelector('.profession');
 
+
 function handleCardName() {
+    updateUserInfo('name', userNameForm.value);
+    setLocalStorage();
     fillCardName();
-    userInfo.name = userNameForm.value;
+}
+
+function updateUserInfo(key, value) {
+    userInfo[key] = value;
+}
+
+function setLocalStorage() {
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+function fillCardName() {
+    if (userInfo.name !== "") {
+        userNameCard.innerHTML = userInfo.name;
+    } else {
+        userNameCard.innerHTML = "Nombre Apellido";
+    }
 }
 
 function handleCardProfession() {
+    updateUserInfo('job', professionForm.value);
+    setLocalStorage();
     fillCardProfession();
-    userInfo.job = professionForm.value;
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
-const fillCardName = () => {
-    if(userNameForm.value === "") {
-        userNameCard.innerHTML = "Nombre Apellido";
+function fillCardProfession() {
+    if(userInfo.job !== "") {
+        professionCard.innerHTML = userInfo.job;
+        console.log(userInfo.job);
     }else {
-        userNameCard.innerHTML = userNameForm.value;
-    }
-    
-}
-
-const fillCardProfession = () => {
-    if(professionForm.value === "") {
         professionCard.innerHTML = "Front-end developer";
-    }else {
-        professionCard.innerHTML = professionForm.value;
     }
 }
 

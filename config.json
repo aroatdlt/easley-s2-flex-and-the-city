@@ -27,7 +27,8 @@
       "_src/assets/js/addtypography.js",
       "_src/assets/js/skills.js",
       "_src/assets/js/sendbackend.js",
-      "_src/assets/js/reset.js"
+      "_src/assets/js/reset.js",
+      "_src/assets/js/searchfromlocalstorage.js"
       
 		],
 		"dest": "public/assets/js/",

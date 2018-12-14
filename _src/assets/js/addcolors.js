@@ -35,7 +35,7 @@ function handleThirdPalete() {
 }
 
 
-function addFirstPalete (event) {
+function addFirstPalete () {
     nameColor.classList.add('add__color__dark-green');
     nameColor.classList.remove('add__color__dark-red');
     nameColor.classList.remove('add__color__dark-blue')
@@ -62,7 +62,7 @@ function addFirstPalete (event) {
 
 /* Adding red palette color 
 */
-function addSecondPalete (event) {
+function addSecondPalete () {
     nameColor.classList.add('add__color__dark-red');
     nameColor.classList.remove('add__color__dark-green');
     nameColor.classList.remove('add__color__dark-blue');
@@ -88,7 +88,7 @@ function addSecondPalete (event) {
 
 /* Adding grey palette color 
 */
-function addThirdPalete (event) {
+function addThirdPalete () {
     nameColor.classList.add('add__color__dark-blue');
     nameColor.classList.remove('add__color__dark-red');
     nameColor.classList.remove('add__color__dark-green');

@@ -12,9 +12,4 @@ let userInfo = {
   }
 
 
-  /* First we storage our object in local storage
-  */
-
-
-
  
