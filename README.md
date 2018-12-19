@@ -1,6 +1,6 @@
 Somos las Flex and the City y hemos creado con cariño y esfuerzo este proyecto entre: 
 # Joana Jiménez, Laura Santiago, Inma Salcedo, Laura Ferrando y Aroa Tato 
-![](assets/images/devin-avery-542010-unsplash.jpg)
+
 > Ha sido nuestro primer proyecto con Javascript, añadiendo los conocimientos aprendidos en nuestro día a día en Adalab. El proyecto consta de dos páginas: una página de bienvenida y una página con una aplicación para crear tarjetas profesionales que puedas compartir fácilmente en las redes sociales.
 
 > Para ello, hemos usado el 
