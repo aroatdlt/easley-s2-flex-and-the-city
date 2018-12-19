@@ -1,72 +1,27 @@
-![Adalab](_src/assets/images/logo-adalab-80px.png)
+Somos las Flex and the City y hemos creado con cariño y esfuerzo este proyecto entre: 
+# Joana Jiménez, Laura Santiago, Inma Salcedo, Laura Ferrando y Aroa Tato 
+![](devin-avery-542010-unsplash.jpg)
+Ha sido nuestro primer proyecto con Javascript, añadiendo los conocimientos aprendidos en nuestro día a día en Adalab. El proyecto consta de dos páginas: una página de bienvenida y una página con una aplicación para crear tarjetas profesionales que puedas compartir fácilmente en las redes sociales.
+
+Para ello, hemos usado el 
 # Adalab web starter kit
-Ahoy! Esta es nuestro Starter Kit en node/gulp para este primer contacto con el desarrollo web
-Incluye SCSS, un sistema de plantillas HTMl y un web server.
+que podéis encontrar en https://github.com/Adalab/Adalab-web-starter-kit, con la explicación detallada de lo que contiene.
 
-## Guía de inicio rápido
-Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com) para trabajar con este Starter Kit, luego:
-1. Descarga o clona el repositorio
-2. Instala las dependencias locales con `$ npm install`
-3. Arranca el kit con `$ gulp`
+Para hacer funcionar nuestra web, hay que seguir los siguientes pasos:
+- Permitir al usuario elegir el estilo de la tarjeta, eligiendo paleta de colores y tipografía.
+- Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado final.
+- Permitir que el usuario pueda compartir su tarjeta de visita por Twitter.
 
-## Espera, ¿esto se hace siempre?
-> ### Solo una vez al principio en cada ordenador que utilicemos:
-- Instalamos node
-- Instalamos el comando de gulp de forma global para poder usarlo desde cualquier carpeta usando `npm install --global gulp-cli`
-
-> ### Cada vez que descarguemos o clonemos un repo:
-- `npm install` para instalar los paquetes necesarios para convertir Sass a CSS, minizarlo, etc.
-
-> ### Cada vez que estemos trabajando con nuestro código:
-- Desde nuestra terminal, ejecutamos el comando `gulp` para que realice la tarea por defecto, que en el caso del `gulpfile.js` que tenemos en adalab-web-starter-kit estará pendiente de nuestros archivos Sass, html y JavaScript y los compilará, minificará y/o recargará el servidor cada vez que hagamos un cambio
-
-## Tareas de gulp incluidas
-### Inicio de un web server para desarrollo
-```
-$ gulp
-```
-Lanza un webserver con BrowserSync y varios watchers estarán pendientes de los archivos SCSS/JS/HTML, en la carpeta **public/**, para recargar el navegador cuando se necesite.
-
-### Versión lista para subir a producción
-```
-$ gulp docs
-```
-En la carpeta **docs/** genera los CSS y JS minimizados y sin sourcemaps listos para subir al repo y activar GitHub Pages en `master/docs`.
+Y para hacer funcionar todo esto, tuvimos que seguir las siguientes especificaciones:
+- Uso avanzado de formularios HTML.
+- Maquetación usando CSS avanzado, como flex y grid.
+- Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first.
+- Gestión de eventos en el navegador (al hacer click, pasa x, etc.).
+- Acceso y envío de datos en Internet mediante peticiones al servidor.
+- Almacenamiento en local usando LocalStorage.
+- Uso de git para el control de versiones del proyecto.
+- Publicación del resultado en Internet usando GitHub pages.
 
 
-## Estructura del proyecto
-Nuestro **gulpfile.js** usa un JSON de configuración con las rutas de los archivos a generar/vigilar.
 
-La estructura de carpetas tiene esta pinta:
-```
-/
-`- _src
-   |- assets
-   |  |- icons
-   |  |- images
-   |  |- js
-   |  `- scss
-   |     `- core
-   |
-   `- templates
-      `- partials
 
-```
-
-## HTML
-Viene incluído el paquete [**gulp-html-partial**](https://www.npmjs.com/package/gulp-html-partial) que nos va a permitir tener un sistema de plantillas html
-
-## Imágenes e iconos
-Tenemos en **_src/** una carpeta para las imágenes del proyecto y una para los iconos como el favicon o los iconos de dispositivos móviles. Estos últimos se generan en la raíz de las carpetas **public/** y **docs/**
-
-## CSS
-Viene incluído el paquete [**gulp-combine-mq**](https://www.npmjs.com/package/gulp-combine-mq) que agrupa todas las mediaqueries al final del documento css.
-
-## JS
-Podemos usar parciales de JS: en el JSON de configuración, **config.json** especificamos los archivos JS que utilizamos y en el orden que deben procesarse.
-
-## ¿Cómo actualizo si tengo una versión anterior?
-En principio puedes descargar todos los archivos fuera de **_src/** y sustituir los de tu proyecto. Además deberías replicar la estructura de carpetas dentro de **_src/**.
-
-## Falta algo?
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de los Issues o si te animas a mejorarlo mándanos un PR :)
