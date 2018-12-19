@@ -43,11 +43,8 @@ function showSkills() {
           }
         }
 
-
-
         limitCheckBox();
         skillsListElement.innerHTML = listContent;
-
 
         function skillsInLocalStorage() {
           let listContentSkills = document.querySelectorAll('.tag');
@@ -60,7 +57,7 @@ function showSkills() {
         skillsInLocalStorage();
 
       }
-      /* console.log(listContent); */
+      
       for (let i = 0; i < skillsInputElements.length; i++) {
         skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
       }
@@ -73,6 +70,5 @@ function showSkills() {
   } */
   /* skillsInLocalStorage(); */
 };
-
 
 showSkills();
