@@ -12,11 +12,13 @@ function handleFirstPalete() {
     userInfo.palette = 1;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
+
 function handleSecondPalete() {
     addSecondPalete();
     userInfo.palette = 2;
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
+
 function handleThirdPalete() {
     addThirdPalete();
     userInfo.palette = 3;
