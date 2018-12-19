@@ -50,7 +50,7 @@ function refillFormUserInfo() {
   }
 }
 
-function refillFormField(inputField, key){
+function refillFormField(inputField, key) {
   inputField.value = userInfo[key];
 }
 
