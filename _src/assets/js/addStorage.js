@@ -1,15 +1,12 @@
 let userInfo = {
-    "palette": 1,
-    "typography": 2,
-    "name" : "",
-    "job": "",
-    "phone": "",
-    "email": "",
-    "linkedin": "",
-    "github": "",
-    "photo": "",
-    "skills": ["HTML", "Sass", "JavaScript"]
-  }
-
-
- 
+  "palette": 1,
+  "typography": 2,
+  "name": "",
+  "job": "",
+  "phone": "",
+  "email": "",
+  "linkedin": "",
+  "github": "",
+  "photo": "",
+  "skills": ["HTML", "Sass", "JavaScript"]
+}
