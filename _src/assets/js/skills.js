@@ -16,7 +16,7 @@ function showSkills() {
       const skillsInputElements = document.querySelectorAll('.checkbox__input');
 
       skillsListElement = document.querySelector('.skill__tags');
-      
+
       function limitCheckBox() {
         let count = 0;
         for (let i = 0; i < skillsInputElements.length; i++) {
@@ -49,60 +49,24 @@ function showSkills() {
         updateUserInfo('skills', skillsArr);
         setLocalStorage();
         limitCheckBox();
-
         skillsInCard();
-       
       }
 
-      /* function handleCheckBoxClick() {
-        let listContent = "";
-
-        for (const skillsItem of skillsInputElements) {
-          if (skillsItem.checked === true) {
-            listContent += `<li class="tag">${skillsItem.value}</li>`;
-          }
-        }
-
-        limitCheckBox();
-        skillsListElement.innerHTML = listContent;
-
-        function skillsInLocalStorage() {
-          let listContentSkills = document.querySelectorAll('.tag');
-          userInfo.skills = [];
-          for (let i = 0; i < listContentSkills.length; i++) {
-            userInfo.skills[i] = listContentSkills[i].innerHTML;
-          }
-          localStorage.setItem('userInfo', JSON.stringify(userInfo));
-        }
-        skillsInLocalStorage();
-
-      } */
-      
       for (let i = 0; i < skillsInputElements.length; i++) {
         skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
       }
-
     });
-  /* function skillsInLocalStorage() {
-    userInfo.skills = listContent;
-    console.log(listContent);
-    localStorage.setItem('userInfo', JSON.stringify(userInfo.skills));
-  } */
-  /* skillsInLocalStorage(); */
 };
 
 showSkills();
 
-
 function skillsInCard() {
-  /* const savedUserInfo = JSON.parse(localStorage.getItem('userInfo'));
-  console.log(savedUserInfo); */
   skillsListElement = document.querySelector('.skill__tags');
   const skillsUserInfo = userInfo.skills;
   const paletteUserInfo = userInfo.palette;
   listContent = '';
   for (let i = 0; i < skillsUserInfo.length; i++) {
-    
+
     if (paletteUserInfo === 1) {
       listContent += `<li class="tag add__color__medium-green">${skillsUserInfo[i]}</li>`;
     } else if (paletteUserInfo === 2) {

@@ -51,17 +51,7 @@ function refillFormUserInfo() {
       } else if (paletteUserInfo === 3) {
         listContentSkillsLS += `<li class="tag add__color__medium-blue">${skillsInObject[i]}</li>`;
       }
-      /* listContentSkillsLS += `<li class="tag">${skillsInObject[i]}</li>`; */
     }
-
-    /* if (paletteUserInfo === 1) {
-      listContent += `<li class="tag add__color__medium-green">${skillsUserInfo[i]}</li>`;
-    } else if (paletteUserInfo === 2) {
-      listContent += `<li class="tag add__color__medium-red">${skillsUserInfo[i]}</li>`;
-    } else if (paletteUserInfo === 3) {
-      listContent += `<li class="tag add__color__medium-blue">${skillsUserInfo[i]}</li>`;
-    } */
-
 
     skillsListElement.innerHTML = listContentSkillsLS;
     const skillChildren = skillContainer.querySelectorAll('.checkbox__input');
