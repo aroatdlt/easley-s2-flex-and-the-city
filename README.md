@@ -1,3 +1,5 @@
+![](images/free_horizontal_on_white_by_logaster.png)
+
 Somos las Flex and the City y hemos creado con cariño y esfuerzo este proyecto entre: 
 # Joana Jiménez, Laura Santiago, Inma Salcedo, Laura Ferrando y Aroa Tato 
 
