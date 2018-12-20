@@ -8,5 +8,5 @@ let userInfo = {
   "linkedin": "",
   "github": "",
   "photo": "",
-  "skills": ["HTML", "Sass", "JavaScript"]
+  "skills": ["HTML", "CSS", "GULP"]
 }
