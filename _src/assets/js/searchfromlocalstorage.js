@@ -4,18 +4,18 @@ function refillFormUserInfo() {
   if (savedUserInfo !== null) {
     userInfo = savedUserInfo;
     refillFormField(userNameForm, 'name');
-    refillFormField(professionForm, 'job');
+    refillFormField(professionForm, 'job'); //creados en previewnamejob
     refillFormField(linkedinForm, 'linkedin');
     refillFormField(emailForm, 'email');
     refillFormField(mobileForm, 'phone');
-    refillFormField(gitHubForm, 'github');
+    refillFormField(gitHubForm, 'github');//creados en previewlinksinicons
 
     fillCardName();
     fillCardProfession();
     fillLinkedin();
     fillMail();
     fillMobileNumber();
-    fillGithubLink();
+    fillGithubLink(); //pasan la info del ls a los links de la tarjeta
 
     if (userInfo.typography === 1) {
       addUbuntuTypo();
@@ -37,7 +37,7 @@ function refillFormUserInfo() {
     } else if (userInfo.palette === 3) {
       addThirdPalete();
       thirdPalete.setAttribute('checked', 'true');
-    }
+    } //añade las clases en funcion de la info de ls
 
     const skillsInObject = userInfo.skills;
     const paletteUserInfo = userInfo.palette;
@@ -51,9 +51,9 @@ function refillFormUserInfo() {
       } else if (paletteUserInfo === 3) {
         listContentSkillsLS += `<li class="tag add__color__medium-blue">${skillsInObject[i]}</li>`;
       }
-    }
+    } //en funcion de la paleta pinta las skills que haya en ls añadiendo la clase correspondiente
 
-    skillsListElement.innerHTML = listContentSkillsLS;
+    skillsListElement.innerHTML = listContentSkillsLS; //pinta las skills en la tarjeta
     const skillChildren = skillContainer.querySelectorAll('.checkbox__input');
   }
 }
