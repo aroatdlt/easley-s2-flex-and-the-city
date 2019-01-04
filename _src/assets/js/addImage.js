@@ -8,6 +8,7 @@ function getImage(e) {
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
+  writeImage();
 }
 
 function writeImage() {
@@ -23,3 +24,4 @@ function fakeFileClick() {
 
 fileField.addEventListener('change', getImage);
 uploadBtn.addEventListener('click', fakeFileClick);
+
