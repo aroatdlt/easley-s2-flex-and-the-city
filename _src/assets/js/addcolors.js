@@ -25,12 +25,16 @@ function handleThirdPalete() {
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
+function addGreen() {
+    tagColors.classList.add('add__color__medium-green');
+};
+
 function addFirstPalete() {
     const tagColors = document.querySelectorAll('.tag');
     //nameColor.classList.add('add__color__dark-green');
     //nameColor.classList.remove('add__color__dark-red');
     //nameColor.classList.remove('add__color__dark-blue')
-    rectangleColor.classList.add('add__color__light-green');
+    //rectangleColor.classList.add('add__color__light-green');
     rectangleColor.classList.remove('add__color__light-blue');
     rectangleColor.classList.remove('add__color__light-red');
     for (let i = 0; i < tagColors.length; i++) {
@@ -38,6 +42,8 @@ function addFirstPalete() {
         tagColors[i].classList.remove('add__color__medium-blue');
         tagColors[i].classList.remove('add__color__medium-red');
     }
+   
+    
     for (let i = 0; i < buttonsColor.length; i++) {
         buttonsColor[i].classList.add('add__color__dark-green');
         buttonsColor[i].classList.remove('.add__color__dark-blue');
