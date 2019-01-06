@@ -9,9 +9,9 @@ function refillFormUserInfo() {
     refillFormField(emailForm, 'email');
     refillFormField(mobileForm, 'phone');
     refillFormField(gitHubForm, 'github');
-
-    fillCardName();
-    fillCardProfession();
+    
+    fillCard(professionCard,userInfo.job);
+    fillCard(userNameCard,userInfo.name);
     fillLinkedin();
     fillMail();
     fillMobileNumber();
