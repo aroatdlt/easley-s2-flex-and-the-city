@@ -27,9 +27,9 @@ function handleThirdPalete() {
 
 function addFirstPalete() {
     const tagColors = document.querySelectorAll('.tag');
-    nameColor.classList.add('add__color__dark-green');
-    nameColor.classList.remove('add__color__dark-red');
-    nameColor.classList.remove('add__color__dark-blue')
+    //nameColor.classList.add('add__color__dark-green');
+    //nameColor.classList.remove('add__color__dark-red');
+    //nameColor.classList.remove('add__color__dark-blue')
     rectangleColor.classList.add('add__color__light-green');
     rectangleColor.classList.remove('add__color__light-blue');
     rectangleColor.classList.remove('add__color__light-red');
