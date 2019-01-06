@@ -1,9 +1,8 @@
 'use strict';
 
-const userPhotoCard = document.querySelector(".photo__user");
-console.log(userPhotoCard);
-
 function fillPhoto() {
+  const userPhotoCard = document.querySelector(".photo__user");
+console.log(userPhotoCard);
     if (userInfo.photo !== "") {
       userPhotoCard.src = userInfo.photo;
     } else {
