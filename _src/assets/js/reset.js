@@ -2,11 +2,13 @@ const resetBtnEl = document.querySelector('.buttom__reset');
 const designForm = document.querySelector('.custom-form');
 const fillForm = document.querySelector('.fill-form');
 const shareForm = document.querySelector('.share-form');
+const resetImage = document.querySelector('.photo__user');
 
 function handleResetBtn () {
     skillsListElement = document.querySelector('.skill__tags');
     professionCard.innerHTML = "Front-end developer";
     userNameCard.innerHTML = "Nombre Apellido";
+    resetImage.src = "assets/images/default.jpeg";
     linkedinLink.href = '';
     emailLink.href = '';
     mobileLink.href = '';
