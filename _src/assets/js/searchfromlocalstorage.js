@@ -16,6 +16,8 @@ function refillFormUserInfo() {
     fillMail();
     fillMobileNumber();
     fillGithubLink();
+    fillPhoto();
+
 
     if (userInfo.typography === 1) {
       addUbuntuTypo();

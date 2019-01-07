@@ -28,8 +28,8 @@
       "_src/assets/js/skills.js",
       "_src/assets/js/sendbackend.js",
       "_src/assets/js/reset.js",
-      "_src/assets/js/searchfromlocalstorage.js"
-      
+      "_src/assets/js/searchfromlocalstorage.js",
+      "_src/assets/js/previewimages.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

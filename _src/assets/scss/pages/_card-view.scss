@@ -103,8 +103,9 @@
   border-radius: 16px;
   width: 32px;
   height: 32px;
-  text-align: center;
-  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
 }
 
