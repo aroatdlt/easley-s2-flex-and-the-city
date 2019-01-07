@@ -12,10 +12,10 @@ function refillFormUserInfo() {
 
     fillCardName();
     fillCardProfession();
-    fillLinkedin();
-    fillMail();
-    fillMobileNumber();
-    fillGithubLink();
+    fillLink(userInfo.phone,icons[0],'tel:');
+    fillLink(userInfo.email,icons[1],'mailto:');
+    fillLink(userInfo.linkedin,icons[2],'https://www.linkedin.com/in/');
+    fillLink(userInfo.github,icons[3],'https://github.com/');
 
     if (userInfo.typography === 1) {
       addUbuntuTypo();
