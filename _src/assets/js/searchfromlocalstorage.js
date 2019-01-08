@@ -41,7 +41,7 @@ const refillFormUserInfo = () => {
     } else if (userInfo.palette === 3) {
       addThirdPalete();
       thirdPalete.setAttribute('checked', 'true');
-    } //añade las clases en funcion de la info de ls
+    } 
     const skillsInObject = userInfo.skills;
     const paletteUserInfo = userInfo.palette;
     const listContentSkillsLS = skillsInObject.map(skill => {
@@ -52,25 +52,10 @@ const refillFormUserInfo = () => {
       } else if (paletteUserInfo === 3) {
         return `<li class="tag add__color__medium-blue">${skill}</li>`;
       }
-    }); //en funcion de la paleta pinta las skills que haya en ls añadiendo la clase correspondiente
-    console.log(listContentSkillsLS);
-    let skillsListElement = document.querySelector('.skill__tags');
-    skillsListElement.innerHTML = listContentSkillsLS; //pinta las skills en la tarjeta
-    // const skillsInObject = userInfo.skills;
-    // const paletteUserInfo = userInfo.palette;
-    // let listContentSkillsLS = "";
-    // let skillsListElement = document.querySelector('.skill__tags');
-    // for (let skill of skillsInObject) {
-    //   if (paletteUserInfo === 1) {
-    //     listContentSkillsLS += `<li class="tag add__color__medium-green">${skill}</li>`;
-    //   } else if (paletteUserInfo === 2) {
-    //     listContentSkillsLS += `<li class="tag add__color__medium-red">${skill}</li>`;
-    //   } else if (paletteUserInfo === 3) {
-    //     listContentSkillsLS += `<li class="tag add__color__medium-blue">${skill}</li>`;
-    //   }
-    // } //en funcion de la paleta pinta las skills que haya en ls añadiendo la clase correspondiente
+    });
 
-    // skillsListElement.innerHTML = listContentSkillsLS; //pinta las skills en la tarjeta
+    let skillsListElement = document.querySelector('.skill__tags');
+    skillsListElement.innerHTML = listContentSkillsLS.join(""); 
   }
 }
 
