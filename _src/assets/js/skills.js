@@ -4,7 +4,7 @@ let skillsArr = [];
 let listContent = "";
 let skillsListElement = '';
 
-function showSkills() {
+const showSkills = () => {
 
   fetch('https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/skills.json')
     .then(response => response.json())
@@ -17,33 +17,33 @@ function showSkills() {
 
       skillsListElement = document.querySelector('.skill__tags');
 
-      function limitCheckBox() {
+      const limitCheckBox =() => {
         let count = 0;
-        for (let i = 0; i < skillsInputElements.length; i++) {
-          if (skillsInputElements[i].checked) {
+        for (const skill of skillsInputElements) {
+          if (skill.checked) {
             count += 1;
           }
         }
         if (count >= 3) {
-          for (let i = 0; i < skillsInputElements.length; i++) {
-            if (!skillsInputElements[i].checked) {
-              skillsInputElements[i].disabled = true;
+          for (const skill of skillsInputElements) {
+            if (!skill.checked) {
+              skill.disabled = true;
             }
           }
         } else {
-          for (let i = 0; i < skillsInputElements.length; i++) {
-            if (!skillsInputElements[i].checked) {
-              skillsInputElements[i].disabled = false;
+          for (const skill of skillsInputElements) {
+            if (!skill.checked) {
+              skill.disabled = false;
             }
           }
         }
       }
 
-      function handleCheckBoxClick() {
+      const handleCheckBoxClick = () => {
         skillsArr = [];
-        for (let i = 0; i < skillsInputElements.length; i++) {
-          if (skillsInputElements[i].checked) {
-            skillsArr.push(totalSkills[i]);
+        for (const skill of skillsInputElements) {
+          if (skill.checked) {
+            skillsArr.push(skill);
           }
         }
         updateUserInfo('skills', skillsArr);
@@ -52,15 +52,15 @@ function showSkills() {
         skillsInCard();
       }
 
-      for (let i = 0; i < skillsInputElements.length; i++) {
-        skillsInputElements[i].addEventListener('click', handleCheckBoxClick);
+      for (const skill of skillsInputElements) {
+        skill.addEventListener('click', handleCheckBoxClick);
       }
     });
 };
 
 showSkills();
 
-function skillsInCard() {
+const skillsInCard = () => {
   skillsListElement = document.querySelector('.skill__tags');
   const skillsUserInfo = userInfo.skills;
   const paletteUserInfo = userInfo.palette;
