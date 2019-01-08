@@ -1,15 +1,19 @@
 let savedUserInfo = JSON.parse(localStorage.getItem('userInfo'));
+const ubuntuTypo = document.querySelector("#Ubuntu");
+const comicSansTypo = document.querySelector("#ComicSans");
+const montserratTypo = document.querySelector("#Montserrat");
 
-function refillFormUserInfo() {
+const refillFormUserInfo = () => {
   if (savedUserInfo !== null) {
     userInfo = savedUserInfo;
+    //añade la info del formulario al ls
     refillFormField(userNameForm, 'name');
-    refillFormField(professionForm, 'job'); //creados en previewnamejob
+    refillFormField(professionForm, 'job');
     refillFormField(linkedinForm, 'linkedin');
     refillFormField(emailForm, 'email');
     refillFormField(mobileForm, 'phone');
-    refillFormField(gitHubForm, 'github');//creados en previewlinksinicons
-
+    refillFormField(gitHubForm, 'github');
+    //pinta en la tarjeta la info del ls (función en previewnamejob y previewlinksinicons)
     fillCardName();
     fillCardProfession();
     fillLink(userInfo.phone,icons[0],'tel:');
@@ -37,29 +41,26 @@ function refillFormUserInfo() {
     } else if (userInfo.palette === 3) {
       addThirdPalete();
       thirdPalete.setAttribute('checked', 'true');
-    } //añade las clases en funcion de la info de ls
-
+    } 
     const skillsInObject = userInfo.skills;
     const paletteUserInfo = userInfo.palette;
-    let listContentSkillsLS = "";
-    let skillsListElement = document.querySelector('.skill__tags');
-    for (let i = 0; i < skillsInObject.length; i++) {
+    const listContentSkillsLS = skillsInObject.map(skill => {
       if (paletteUserInfo === 1) {
-        listContentSkillsLS += `<li class="tag add__color__medium-green">${skillsInObject[i]}</li>`;
+        return `<li class="tag add__color__medium-green">${skill}</li>`;
       } else if (paletteUserInfo === 2) {
-        listContentSkillsLS += `<li class="tag add__color__medium-red">${skillsInObject[i]}</li>`;
+        return `<li class="tag add__color__medium-red">${skill}</li>`;
       } else if (paletteUserInfo === 3) {
-        listContentSkillsLS += `<li class="tag add__color__medium-blue">${skillsInObject[i]}</li>`;
+        return `<li class="tag add__color__medium-blue">${skill}</li>`;
       }
-    } //en funcion de la paleta pinta las skills que haya en ls añadiendo la clase correspondiente
+    });
 
-    skillsListElement.innerHTML = listContentSkillsLS; //pinta las skills en la tarjeta
-    const skillChildren = skillContainer.querySelectorAll('.checkbox__input');
+    let skillsListElement = document.querySelector('.skill__tags');
+    skillsListElement.innerHTML = listContentSkillsLS.join(""); 
   }
 }
 
-function refillFormField(inputField, key) {
+const refillFormField = (inputField, key) => {
   inputField.value = userInfo[key];
-}
+};
 
 refillFormUserInfo();
