@@ -13,13 +13,17 @@ const refillFormUserInfo = () => {
     refillFormField(emailForm, 'email');
     refillFormField(mobileForm, 'phone');
     refillFormField(gitHubForm, 'github');
-    //pinta en la tarjeta la info del ls (función en previewnamejob y previewlinksinicons)
-    fillCardName();
-    fillCardProfession();
+    //pinta en la tarjeta la info del ls (función en previewnamejob y previewlinksinicons)   
+    
+    fillCard(professionCard,userInfo.job);
+    fillCard(userNameCard,userInfo.name);
     fillLink(userInfo.phone,icons[0],'tel:');
     fillLink(userInfo.email,icons[1],'mailto:');
     fillLink(userInfo.linkedin,icons[2],'https://www.linkedin.com/in/');
     fillLink(userInfo.github,icons[3],'https://github.com/');
+    
+    fillPhoto();
+
 
     if (userInfo.typography === 1) {
       addUbuntuTypo();

@@ -3,41 +3,20 @@ const professionForm = document.querySelector('.profession__input');
 const userNameCard = document.querySelector('.name');
 const professionCard = document.querySelector('.profession');
 
-function handleCardName() {
+const updateUserInfo =(key, value) => userInfo[key] = value;
+const setLocalStorage = () => localStorage.setItem('userInfo', JSON.stringify(userInfo));
+const fillCard = (valueCard,valueSavedLocal) => (valueSavedLocal !== "") ? valueCard.innerHTML = valueSavedLocal : valueCard.innerHTML = "Front-end developer";
+
+const handleCardName = () => {
   updateUserInfo('name', userNameForm.value);
   setLocalStorage();
-  fillCardName();
+  fillCard(userNameCard,userInfo.name);
 }
 
-function updateUserInfo(key, value) {
-  userInfo[key] = value;
-}
-
-function setLocalStorage() {
-  localStorage.setItem('userInfo', JSON.stringify(userInfo));
-}
-
-function fillCardName() {
-  if (userInfo.name !== "") {
-    userNameCard.innerHTML = userInfo.name;
-  } else {
-    userNameCard.innerHTML = "Nombre Apellido";
-  }
-}
-
-function handleCardProfession() {
+const handleCardProfession = () => {
   updateUserInfo('job', professionForm.value);
   setLocalStorage();
-  fillCardProfession();
-}
-
-function fillCardProfession() {
-  if (userInfo.job !== "") {
-    professionCard.innerHTML = userInfo.job;
-    console.log(userInfo.job);
-  } else {
-    professionCard.innerHTML = "Front-end developer";
-  }
+  fillCard(professionCard,userInfo.job);
 }
 
 userNameForm.addEventListener('keyup', handleCardName);
