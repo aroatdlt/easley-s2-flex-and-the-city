@@ -2,63 +2,38 @@ const mobileForm = document.querySelector('.phone__input');
 const emailForm = document.querySelector('.email__input');
 const linkedinForm = document.querySelector('.linkedin__input');
 const gitHubForm = document.querySelector('.github__input');
-const mobileLink = document.querySelector('.icon__number');
-const emailLink = document.querySelector('.icon__mail');
-const linkedinLink = document.querySelector('.icon__linkedin');
-const githubLink = document.querySelector('.icon__github');
+const icons = document.querySelectorAll('.icon__item');
 
-function handleLinkedin() {
-    updateUserInfo('linkedin', linkedinForm.value);
-    setLocalStorage();
-    fillLinkedin();
+const fillLink = (savedDataLocal,icon,url) => {
+    (savedDataLocal !== "") ? icon.href = url+savedDataLocal : console.log('else',icon);
 }
 
-function fillLinkedin() {
- if(userInfo.linkedin !== ""){
-    linkedinLink.href = `https://www.linkedin.com/in/${userInfo.linkedin}`;
- }
-};
-
-linkedinForm.addEventListener('keyup', handleLinkedin);
-
-function handleMail() {
-    updateUserInfo('email', emailForm.value);
-    setLocalStorage();
-    fillMail();
-}
-
-function fillMail() {
-    if(userInfo.email !== ""){
-        emailLink.href = `mailto:${userInfo.email}`;
-    }
-};
-
-emailForm.addEventListener('keyup', handleMail);
-
-function handleMobile() {
+const handleMobile = () => {
     updateUserInfo('phone', mobileForm.value);
     setLocalStorage();
-    fillMobileNumber();
+    fillLink(userInfo.phone,icons[0],'tel:');
 }
 
-function fillMobileNumber() {
-    if(userInfo.phone !== "") {
-        mobileLink.href = 'tel:' + userInfo.phone;
-    }
-};
+const handleMail = () => {
+    updateUserInfo('email', emailForm.value);
+    setLocalStorage();
+    fillLink(userInfo.email,icons[1],'mailto:');
+}
 
-mobileForm.addEventListener('keyup', handleMobile);
+const handleLinkedin = () => {
+    updateUserInfo('linkedin', linkedinForm.value);
+    setLocalStorage();
+    fillLink(userInfo.linkedin,icons[2],'https://www.linkedin.com/in/');
+}
 
-function handleGithub() {
+const handleGithub = () => {
     updateUserInfo('github', gitHubForm.value);
     setLocalStorage();
-    fillGithubLink();
+    fillLink(userInfo.github,icons[3],'https://github.com/');
 }
 
-function fillGithubLink() {
-    if(userInfo.github !== ""){
-        githubLink.href = 'https://github.com/' + userInfo.github;
-    }
-};
-
+mobileForm.addEventListener('keyup', handleMobile);
+emailForm.addEventListener('keyup', handleMail);
+linkedinForm.addEventListener('keyup', handleLinkedin);
 gitHubForm.addEventListener('keyup', handleGithub);
+

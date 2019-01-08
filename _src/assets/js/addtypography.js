@@ -1,57 +1,36 @@
-const ubuntuTypo = document.querySelector('#Ubuntu');
-const comicSansTypo = document.querySelector('#ComicSans');
-const montserratTypo = document.querySelector('#Montserrat');
-const nameTypo = document.querySelector('.name');
-const professionTypo = document.querySelector('.profession');
+const listSelectTypo = document.querySelector('.type_fonts_container');
+const nameJobEl = document.querySelector('.name__container');
 
-function selectUbuntu() {
-  addUbuntuTypo();
-  userInfo.typography = 1;
+function selectTypo (event) {
+  const typoSelect = event.target;
+  console.log (typoSelect.id);
+  if (typoSelect.id === 'Ubuntu'){
+    addUbuntuTypo ();
+    userInfo.typography = 1;
   localStorage.setItem('userInfo', JSON.stringify(userInfo));
-};
-
-function selectComicSans() {
-  addComicSansTypo();
+  } else if (typoSelect.id === 'ComicSans'){
+    addComicSansTypo();
   userInfo.typography = 2;
   localStorage.setItem('userInfo', JSON.stringify(userInfo));
-};
-
-function selectMontserrat() {
-  addMonserratTypo();
+  } else if (typoSelect.id === 'Montserrat') {
+    addMonserratTypo();
   userInfo.typography = 3;
   localStorage.setItem('userInfo', JSON.stringify(userInfo));
+  }
+
 };
 
-function addUbuntuTypo() {
-  nameTypo.classList.add('add__font__ubuntu');
-  nameTypo.classList.remove('add__font__comicsans');
-  nameTypo.classList.remove('add__font__monserrat');
+listSelectTypo.addEventListener('click', selectTypo);
 
-  professionTypo.classList.add('add__font__ubuntu');
-  professionTypo.classList.remove('add__font__comicsans');
-  professionTypo.classList.remove('add__font__monserrat');
+function addUbuntuTypo () {
+  nameJobEl.classList.add('add__font__ubuntu');
+  nameJobEl.classList.remove('add__font__comicsans', 'add__font__monserrat');
 };
-
-function addComicSansTypo() {
-  nameTypo.classList.add('add__font__comicsans');
-  nameTypo.classList.remove('add__font__ubuntu');
-  nameTypo.classList.remove('add__font__monserrat');
-
-  professionTypo.classList.add('add__font__comicsans');
-  professionTypo.classList.remove('add__font__ubuntu');
-  professionTypo.classList.remove('add__font__monserrat');
+function addComicSansTypo () {
+  nameJobEl.classList.add('add__font__comicsans');
+  nameJobEl.classList.remove('add__font__ubuntu', 'add__font__monserrat');
 };
-
-function addMonserratTypo() {
-  nameTypo.classList.add('add__font__monserrat');
-  nameTypo.classList.remove('add__font__ubuntu');
-  nameTypo.classList.remove('add__font__comicsans');
-
-  professionTypo.classList.add('add__font__monserrat');
-  professionTypo.classList.remove('add__font__ubuntu');
-  professionTypo.classList.remove('add__font__comicsans');
+function addMonserratTypo () {
+  nameJobEl.classList.add('add__font__monserrat');
+  nameJobEl.classList.remove('add__font__comicsans', 'add__font__ubuntu');
 };
-
-ubuntuTypo.addEventListener('click', selectUbuntu);
-comicSansTypo.addEventListener('click', selectComicSans);
-montserratTypo.addEventListener('click', selectMontserrat);
