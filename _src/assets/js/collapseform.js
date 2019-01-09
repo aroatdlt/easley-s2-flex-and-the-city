@@ -8,103 +8,60 @@ const iconDesignElement = document.querySelector('.icon_design');
 const iconFillElement = document.querySelector('.icon_fill');
 const iconShareElement = document.querySelector('.icon_share');
 
-function handleCollapseDesign() {
-  designContentElement.classList.toggle('hidden');
-  if (iconDesignElement.classList.contains('fa-angle-up')) {
-    iconDesignElement.classList.remove('fa-angle-up');
-    iconDesignElement.classList.add('fa-angle-down');
+function toggleCollapsibleIcon(collapsibleIcon) {
+  if (collapsibleIcon.classList.contains('fa-angle-up')) {
+    collapsibleIcon.classList.remove('fa-angle-up');
+    collapsibleIcon.classList.add('fa-angle-down');
   } else {
-    iconDesignElement.classList.remove('fa-angle-down');
-    iconDesignElement.classList.add('fa-angle-up');
+    collapsibleIcon.classList.remove('fa-angle-down');
+    collapsibleIcon.classList.add('fa-angle-up');
   }
+}
 
+function hideDesignContent() {
+  if (!designContentElement.classList.contains('hidden')) {
+    designContentElement.classList.add('hidden');
+    toggleCollapsibleIcon(iconDesignElement);
+  }
+}
+
+function hideFillContent() {
   if (!fillContentElement.classList.contains('hidden')) {
     fillContentElement.classList.add('hidden');
-    if (iconFillElement.classList.contains('fa-angle-up')) {
-      iconFillElement.classList.remove('fa-angle-up');
-      iconFillElement.classList.add('fa-angle-down');
-    } else {
-      iconFillElement.classList.remove('fa-angle-down');
-      iconFillElement.classList.add('fa-angle-up');
-    }
+    toggleCollapsibleIcon(iconFillElement);
   }
+}
 
+function hideShareContent() {
   if (!shareContentElement.classList.contains('hidden')) {
     shareContentElement.classList.add('hidden');
-    if (iconShareElement.classList.contains('fa-angle-up')) {
-      iconShareElement.classList.remove('fa-angle-up');
-      iconShareElement.classList.add('fa-angle-down');
-    } else {
-      iconShareElement.classList.remove('fa-angle-down');
-      iconShareElement.classList.add('fa-angle-up');
-    }
+    toggleCollapsibleIcon(iconShareElement);
   }
+}
+
+function handleCollapseDesign() {
+  designContentElement.classList.toggle('hidden');
+  toggleCollapsibleIcon(iconDesignElement);
+
+  hideFillContent();
+  hideShareContent();
+  
 }
 
 function handleCollapseFill() {
   fillContentElement.classList.toggle('hidden');
-  if (iconFillElement.classList.contains('fa-angle-up')) {
-    iconFillElement.classList.remove('fa-angle-up');
-    iconFillElement.classList.add('fa-angle-down');
-  } else {
-    iconFillElement.classList.remove('fa-angle-down');
-    iconFillElement.classList.add('fa-angle-up');
-  }
+  toggleCollapsibleIcon(iconFillElement);
 
-  if (!designContentElement.classList.contains('hidden')) {
-    designContentElement.classList.add('hidden');
-    if (iconDesignElement.classList.contains('fa-angle-up')) {
-      iconDesignElement.classList.remove('fa-angle-up');
-      iconDesignElement.classList.add('fa-angle-down');
-    } else {
-      iconDesignElement.classList.remove('fa-angle-down');
-      iconDesignElement.classList.add('fa-angle-up');
-    }
-  }
-
-  if (!shareContentElement.classList.contains('hidden')) {
-    shareContentElement.classList.add('hidden');
-    if (iconShareElement.classList.contains('fa-angle-up')) {
-      iconShareElement.classList.remove('fa-angle-up');
-      iconShareElement.classList.add('fa-angle-down');
-    } else {
-      iconShareElement.classList.remove('fa-angle-down');
-      iconShareElement.classList.add('fa-angle-up');
-    }
-  }
+  hideDesignContent();
+  hideShareContent();
 }
 
 function handleCollapseShare() {
   shareContentElement.classList.toggle('hidden');
-  if (iconShareElement.classList.contains('fa-angle-up')) {
-    iconShareElement.classList.remove('fa-angle-up');
-    iconShareElement.classList.add('fa-angle-down');
-  } else {
-    iconShareElement.classList.remove('fa-angle-down');
-    iconShareElement.classList.add('fa-angle-up');
-  }
+  toggleCollapsibleIcon(iconShareElement);
 
-  if (!designContentElement.classList.contains('hidden')) {
-    designContentElement.classList.add('hidden');
-    if (iconDesignElement.classList.contains('fa-angle-up')) {
-      iconDesignElement.classList.remove('fa-angle-up');
-      iconDesignElement.classList.add('fa-angle-down');
-    } else {
-      iconDesignElement.classList.remove('fa-angle-down');
-      iconDesignElement.classList.add('fa-angle-up');
-    }
-  }
-
-  if (!fillContentElement.classList.contains('hidden')) {
-    fillContentElement.classList.add('hidden');
-    if (iconFillElement.classList.contains('fa-angle-up')) {
-      iconFillElement.classList.remove('fa-angle-up');
-      iconFillElement.classList.add('fa-angle-down');
-    } else {
-      iconFillElement.classList.remove('fa-angle-down');
-      iconFillElement.classList.add('fa-angle-up');
-    }
-  }
+  hideDesignContent();
+  hideFillContent();
 }
 
 collapseDesignElement.addEventListener('click', handleCollapseDesign);
