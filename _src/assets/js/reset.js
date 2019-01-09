@@ -3,6 +3,10 @@ const designForm = document.querySelector('.custom-form');
 const fillForm = document.querySelector('.fill-form');
 const shareForm = document.querySelector('.share-form');
 const resetImage = document.querySelector('.photo__user');
+const linkedinLink = document.querySelector('.icon__linkedin');
+const emailLink = document.querySelector('.icon__mail');
+const mobileLink = document.querySelector('.icon__number');
+const githubLink = document.querySelector('.icon__github');
 
 function handleResetBtn () {
     skillsListElement = document.querySelector('.skill__tags');
@@ -20,6 +24,11 @@ function handleResetBtn () {
     designForm.reset();
     fillForm.reset();
     shareForm.reset();
+    // resetLocalStorage();
 }
+
+// function resetLocalStorage () {
+//     localStorage.clear();
+// }
 
 resetBtnEl.addEventListener('click', handleResetBtn);
