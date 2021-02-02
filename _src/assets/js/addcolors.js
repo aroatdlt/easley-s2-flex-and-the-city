@@ -26,6 +26,7 @@ function handleThirdPalete() {
 }
 
 function addFirstPalete() {
+    const tagColors = document.querySelectorAll('.tag');
     nameColor.classList.add('add__color__dark-green');
     nameColor.classList.remove('add__color__dark-red');
     nameColor.classList.remove('add__color__dark-blue')
@@ -50,6 +51,7 @@ function addFirstPalete() {
 };
 
 function addSecondPalete() {
+    const tagColors = document.querySelectorAll('.tag');
     nameColor.classList.add('add__color__dark-red');
     nameColor.classList.remove('add__color__dark-green');
     nameColor.classList.remove('add__color__dark-blue');
@@ -74,6 +76,7 @@ function addSecondPalete() {
 };
 
 function addThirdPalete() {
+    const tagColors = document.querySelectorAll('.tag');
     nameColor.classList.add('add__color__dark-blue');
     nameColor.classList.remove('add__color__dark-red');
     nameColor.classList.remove('add__color__dark-green');

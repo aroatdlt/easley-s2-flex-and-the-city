@@ -40,11 +40,19 @@ function refillFormUserInfo() {
     }
 
     const skillsInObject = userInfo.skills;
+    const paletteUserInfo = userInfo.palette;
     let listContentSkillsLS = "";
     let skillsListElement = document.querySelector('.skill__tags');
     for (let i = 0; i < skillsInObject.length; i++) {
-      listContentSkillsLS += `<li class="tag">${skillsInObject[i]}</li>`;
+      if (paletteUserInfo === 1) {
+        listContentSkillsLS += `<li class="tag add__color__medium-green">${skillsInObject[i]}</li>`;
+      } else if (paletteUserInfo === 2) {
+        listContentSkillsLS += `<li class="tag add__color__medium-red">${skillsInObject[i]}</li>`;
+      } else if (paletteUserInfo === 3) {
+        listContentSkillsLS += `<li class="tag add__color__medium-blue">${skillsInObject[i]}</li>`;
+      }
     }
+
     skillsListElement.innerHTML = listContentSkillsLS;
     const skillChildren = skillContainer.querySelectorAll('.checkbox__input');
   }
